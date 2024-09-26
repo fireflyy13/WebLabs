@@ -36,16 +36,180 @@
     </div>
     <div class="lab-describe" id="hide">
       <div class="tasks" id="hide">
-        <button class="task">Опис предметного середовища</button>
-        <button class="task">Тема, Мета, Місце розташування</button>
-        <button class="task">Структура документів</button>
-        <button class="task">HTML-код таблиці</button>
-        <button class="task">HTML-код форми</button>
-        <button class="task">HTML-код зображення</button>
-        <button class="task">Висновки</button>
+        <button class="task" onClick="showPoint1()">
+          Опис предметного середовища
+        </button>
+        <button class="task" onClick="showPoint2()">Тема, Мета</button>
+        <button class="task" onClick="showPoint3()">
+          Структура документів
+        </button>
+        <button class="task" onClick="showPoint4()">HTML-код таблиці</button>
+        <button class="task" onClick="showPoint5()">HTML-код форми</button>
+        <button class="task" onClick="showPoint6()">HTML-код зображення</button>
+        <button class="task" onClick="showPoint7()">Висновки</button>
       </div>
       <div class="field-field">
-        <div class="field-describe"></div>
+        <div class="field-describe">
+          <div id="point1" style="display: none">
+            <h1>Веб-застосунок для отримання даних про небесні тіла</h1>
+            <p>
+              Веб-застосунок забезпечує пошук відомостей про визначене небесне
+              тіло за ключовим словом або категорією. Головний розділ містить в
+              собі декілька різновидів астрономічних об'єктів і надає загальну
+              інформацію про додаток. Кожна група володіє окремою сторінкою та
+              представляє список найвідоміших тіл, які в свою чергу
+              характеризуються визначенням, термінами, історією відкриття,
+              дотичними вченими. Опис доповнює панель коментарів з можливістю їх
+              написання, редагування й видалення.
+            </p>
+          </div>
+          <div id="point2" style="display: none">
+            <p>
+              Тема: СТРУКТУРА HTML-ДОКУМЕНТА. ВИБІР ПРЕДМЕТНОЇ ГАЛУЗІ. РОБОТА З
+              ПОСИЛАННЯМИ, ТАБЛИЦЯМИ, ЗОБРАЖЕННЯМИ, СПИСКАМИ в HTML-ДОКУМЕНТІ.
+            </p>
+            <p>
+              Мета: придбати практичні навички роботи з HTML-документом,
+              таблицями, , зображеннями, посиланнями, списками, формами Створити
+              шаблон звітного HTML-документом для відображення результатів
+              роботи всіх лабораторних робіт.
+            </p>
+          </div>
+          <div id="point3" style="display: none">
+            <textarea>
+                <html>
+                  <head>
+                  <body>
+                  <header>
+                  <nav>
+                  <ul>
+                    <li>
+                    <li>
+                    <li>
+                    <li>
+                  <main>
+                    Сторінка 1 (page1)
+                    Сторінка 2 (page2)
+                    Сторінка 3 (page3)
+                    Сторінка 4 (page4)
+                  <footer>
+                </textarea
+            >
+          </div>
+          <div id="point4" style="display: none">
+            <textarea rows="10" cols="50">
+                <table>
+                    <tr>
+                      <th>Planet</th>
+                      <th>Diameter(km)</th>
+                      <th>Average temperature (degrees Celcius)</th>
+                      <th>Rings and Moons</th>
+                    </tr>
+                    <tr>
+                      <td>Mercury</td>
+                      <td>4879</td>
+                      <td>179</td>
+                      <td>0</td>
+                    </tr>
+                    <tr>
+                      <td>Venus</td>
+                      <td>12104</td>
+                      <td>482</td>
+                      <td>0</td>
+                    </tr>
+                    <tr>
+                      <td>Earth</td>
+                      <td>12756</td>
+                      <td>15</td>
+                      <td>1 moon</td>
+                    </tr>
+                    <tr>
+                      <td>Mars</td>
+                      <td>6756</td>
+                      <td>-63</td>
+                      <td>2 moons</td>
+                    </tr>
+                    <tr>
+                      <td>Jupiter</td>
+                      <td>142984</td>
+                      <td>-121</td>
+                      <td>60 moons + rings</td>
+                    </tr>
+                    <tr>
+                      <td>Saturn</td>
+                      <td>120536</td>
+                      <td>-125</td>
+                      <td>31 moons + rings</td>
+                    </tr>
+                    <tr>
+                      <td>Uranus</td>
+                      <td>51118</td>
+                      <td>-193</td>
+                      <td>27 moons + rings</td>
+                    </tr>
+                    <tr>
+                      <td>Neptune</td>
+                      <td>49528</td>
+                      <td>-173</td>
+                      <td>13 moons + rings</td>
+                    </tr>
+                  </table> </textarea
+            >
+          </div>
+          <div id="point5" style="display: none">
+            <textarea>
+ <form class="search" method="get" action="">
+                <input type="text" name="search" placeholder="Search" />
+              </form></textarea
+            >
+          </div>
+          <div id="point6" style="display: none">
+            <textarea>
+                <img
+                src="images/pexels-felixmittermeier-957040.jpg"
+                style="
+                  height: 318px;
+                  width: 432px;
+                  height: 260px;
+                  border-radius: 5px;
+                  /* border: 2px solid #1e1248; */
+                  box-shadow: 8px 8px 15px rgba(0, 0, 0, 0.5);
+                "
+              />
+              <div class="images">
+                <img src="images/earth-blue-planet-globe-planet-41953.jpeg" />
+                <img src="images/sun-fireball-solar-flare-sunlight-87611.jpeg" />
+                <img src="images/free-photo-of-barred-spiral-andromeda-galaxy.jpeg" />
+                <img src="images/pexels-pixabay-47367.jpg" />
+              </div>
+
+              <img
+          src="images/free-photo-of-a-statue-of-a-man-holding-a-book-in-front-of-a-brick-building.jpeg"
+          style="height: 375px; width: 562px"
+        />
+
+        <img
+        src="images/pexels-marketinconmartin-5551476.jpg"
+        style="height: 432px; width: 404px"
+      />
+
+      <img
+          src="images/stars.png"
+          style="height: 72px; width: 72px; margin: 30px"
+        />
+            </textarea>
+          </div>
+          <div id="point7" style="display: none">
+            <p>
+              Дана лабораторна робота дозволила мені здобути практичні навички
+              роботи з HTML документами, таблицями, зображеннями, посиланнями,
+              списками, формами, в кінці чого був створений звітний
+              HTML-документ для відображення результатів роботи. Також було
+              вивчено структуру документа й вибрано предметну галузь для
+              подальшого вивчення веб-розробки.
+            </p>
+          </div>
+        </div>
       </div>
     </div>
   </body>

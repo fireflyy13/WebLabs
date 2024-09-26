@@ -127,3 +127,17 @@ h3 {
     0 8px 12px 6px rgb(60 64 67 / 15%);
   outline: none;
 }
+
+textarea {
+  background-color: transparent; /* Remove background */
+  border: none; /* Remove border */
+  padding: 10px; /* Add padding */
+  font-family: Arial, sans-serif; /* Set font */
+  font-size: 14px; /* Set font size */
+  width: 100%; /* Full width */
+  height: 450px; /* Set a fixed height */
+  resize: none; /* Disable resizing */
+  border-radius: 5px; /* Slightly rounded corners */
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); /* Optional: add subtle shadow */
+  outline: none; /* Remove focus outline */
+}
