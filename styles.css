@@ -1,0 +1,130 @@
+body {
+  font-family: "Vollkorn";
+  background-color: #e2d8d7;
+}
+
+.header {
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.header h1,
+h2,
+h3 {
+  margin: 10px;
+}
+
+.info {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.lab-container {
+  height: 70px;
+  width: 100%;
+  display: flex;
+  gap: 10px;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: #dad0ce;
+}
+
+.lab {
+  width: 150px;
+  height: 60px;
+  background-color: #9e7e7e;
+  border-radius: 5px;
+  color: #f5f1e8;
+}
+
+.tasks {
+  height: 500px;
+  width: 175px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 16px;
+  border-radius: 5px;
+  background-color: #dad0ce;
+}
+
+.task {
+  width: 150px;
+  height: 60px;
+  background-color: #9e7e7e;
+  border-radius: 5px;
+  color: #f5f1e8;
+}
+
+.lab-describe {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.field-describe {
+  background-color: #dad0ce;
+  height: 470px;
+  width: 1300px;
+  border-radius: 15px;
+}
+
+.field-field {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.task {
+  border-radius: 24px;
+  border-style: none;
+  box-shadow: rgba(0, 0, 0, 0.2) 0 3px 5px -1px,
+    rgba(0, 0, 0, 0.14) 0 6px 10px 0, rgba(0, 0, 0, 0.12) 0 1px 18px 0;
+  box-sizing: border-box;
+  cursor: pointer;
+  height: 48px;
+  transition: box-shadow 280ms cubic-bezier(0.4, 0, 0.2, 1),
+    opacity 15ms linear 30ms, transform 270ms cubic-bezier(0, 0, 0.2, 1) 0ms;
+  font-weight: 600;
+}
+
+.task:hover {
+  background: #a98886;
+}
+
+.task:active {
+  box-shadow: 0 4px 4px 0 rgb(60 64 67 / 30%),
+    0 8px 12px 6px rgb(60 64 67 / 15%);
+  outline: none;
+}
+
+.lab {
+  border-radius: 24px;
+  font-weight: 600;
+  border-style: none;
+  box-shadow: rgba(0, 0, 0, 0.2) 0 3px 5px -1px,
+    rgba(0, 0, 0, 0.14) 0 6px 10px 0, rgba(0, 0, 0, 0.12) 0 1px 18px 0;
+  box-sizing: border-box;
+  cursor: pointer;
+  height: 48px;
+  transition: box-shadow 280ms cubic-bezier(0.4, 0, 0.2, 1),
+    opacity 15ms linear 30ms, transform 270ms cubic-bezier(0, 0, 0.2, 1) 0ms;
+}
+
+.lab:hover {
+  background: #a98886;
+}
+
+.lab:active {
+  box-shadow: 0 4px 4px 0 rgb(60 64 67 / 30%),
+    0 8px 12px 6px rgb(60 64 67 / 15%);
+  outline: none;
+}
