@@ -73,6 +73,7 @@ h3 {
   height: 470px;
   width: 1300px;
   border-radius: 15px;
+  overflow-y: scroll;
 }
 
 .field-field {
@@ -129,15 +130,19 @@ h3 {
 }
 
 textarea {
-  background-color: transparent; /* Remove background */
-  border: none; /* Remove border */
-  padding: 10px; /* Add padding */
-  font-family: Arial, sans-serif; /* Set font */
-  font-size: 14px; /* Set font size */
-  width: 100%; /* Full width */
-  height: 450px; /* Set a fixed height */
-  resize: none; /* Disable resizing */
-  border-radius: 5px; /* Slightly rounded corners */
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); /* Optional: add subtle shadow */
-  outline: none; /* Remove focus outline */
+  background-color: transparent;
+  border: none;
+  padding: 10px;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  width: 100%;
+  height: 450px;
+  resize: none;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  outline: none;
+}
+
+.tasks {
+  display: none;
 }

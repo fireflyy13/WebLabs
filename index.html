@@ -28,10 +28,12 @@
     </div>
     <div class="info">
       <div class="lab-container">
-        <button class="lab" id="lab1" onClick="myFunction()">
+        <button class="lab" id="lab1" onClick="showLab1Tasks()">
           Лабораторна №1
         </button>
-        <button class="lab">Лабораторна №2</button>
+        <button class="lab" id="lab2" onClick="showLab2Tasks()">
+          Лабораторна №2
+        </button>
         <button class="lab">Лабораторна №3</button>
         <button class="lab">Лабораторна №4</button>
         <button class="lab">Лабораторна №5</button>
@@ -56,7 +58,7 @@
         <button class="task" onClick="showPoint7()">Висновки</button>
       </div>
       <div class="field-field">
-        <div class="field-describe">
+        <div class="field-describe" style="margin:30px">
           <div id="point1" style="display: none">
             <h1>Веб-застосунок для отримання даних про небесні тіла</h1>
             <p>
@@ -216,6 +218,405 @@
               подальшого вивчення веб-розробки.
             </p>
           </div>
+          <div id="point2_1" style="display: none">
+            <p>
+              Тема: КАСКАДНІ ТАБЛИЦІ СТИЛІВ. СЕЛЕКТОРИ .ІДЕНТИФІКАТОРИ. СТИЛЬОВЕ ОФОРМЛЕННЯ ТЕКСТОВИХ ЕЛЕМЕНТІВ В HTML-ДОКУМЕНТАХ.
+            </p>
+            <p>
+              Мета: придбати практичні навички роботи  з селекторами, ідентифікаторами, списками,  різноманітними властивостями кольору і фону,  зовнішними та внутрішними  відступами,  плаваючими елементами, оформленням текстових елементів
+            </p>
+          </div>
+          <div id="point2_3" style="display: none">  <textarea style="height: 300px">
+            Програмний HTML-код:
+            <form class="search" method="get" action="">
+              <input type="text" name="search" placeholder="Search" />
+            </form>
+            
+            Програмний CSS-код:
+            input {
+              height: 50px;
+              width: 923px;
+              background-color: #fffade;
+              opacity: 0.6;
+              border-radius: 10px;
+              box-shadow: 8px 8px 15px #513a5f;
+              font-family: "Alkalami", sans-serif;
+              font-size: 18px;
+              display: flex;
+              align-items: center;
+              border: none;
+              background-size: 35px 35px;
+              background-image: url("images/magnifying-glass.png");
+              background-position: 10px 10px;
+              background-repeat: no-repeat;
+              padding-left: 50px;
+              padding-top: 10px;
+            }
+            
+            </textarea
+          >
+          <div style="margin: 20px">
+            <p>Зображення в браузері</p>
+            <img src="Знімок екрана 2024-09-29 194015.png" style="width: 1000px" />
+          </div>
+        </div>
+          
+          <div id="point2_4" style="display: none"> <textarea style="height: 300px">
+            Програмний HTML-код:
+            <header>
+              <nav>
+                <div class="header">
+                  <div class="header-content">
+                    <div class="left-header">
+                      <p
+                        class="logo"
+                        style="
+                          width: 191px;
+                          height: 25px;
+                          font-size: 18px;
+                          text-align: center;
+                          color: #f2d9dd;
+                        "
+                      >
+                        Astrod
+                      </p>
+                    </div>
+                    <div class="right-header">
+                      <ul>
+                        <li>
+                          <a
+                            href="https://uk.wikipedia.org/wiki/%D0%9F%D0%BB%D0%B0%D0%BD%D0%B5%D1%82%D0%B0"
+                            >Planets</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            href="https://uk.wikipedia.org/wiki/%D0%97%D0%BE%D1%80%D1%8F"
+                            >Stars</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            href="https://uk.wikipedia.org/wiki/%D0%93%D0%B0%D0%BB%D0%B0%D0%BA%D1%82%D0%B8%D0%BA%D0%B0"
+                            >Galaxies</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            href="https://uk.wikipedia.org/wiki/%D0%A1%D1%83%D0%BF%D1%83%D1%82%D0%BD%D0%B8%D0%BA"
+                            >Moons</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </nav>
+            </header>
+            
+            Програмний CSS-код:
+            .header {
+              width: 100%;
+              height: 70px;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+            }</textarea
+          >
+          <div style="margin: 20px">
+            <p>Зображення в браузері</p>
+            <img src="image.png" style="width: 1000px" />
+          </div></div>
+          <div id="point2_5" style="display: none">
+            <textarea style="height: 150px">
+              Програмний HTML-код:
+              <div id="lists">
+                <h2>
+                  <ul>
+                    <li>Lorem ipsum</li>
+                    <li>dolor sit amet</li>
+                    <li>consectetur</li>
+                    <li>adipiscing elit</li>
+                    <li>Ut pulvinar</li>
+                  </ul>
+                  <ol>
+                    <li>felis tempor</li>
+                    <li>dictum nisi</li>
+                    <li>et placerat eros</li>
+                    <li>Ut tempor libero</li>
+                  </ol>
+                </h2>
+              </div>
+              
+              Програмний CSS-код:
+              #lists {
+                display: flex;
+                justify-content: center;
+              }
+              </textarea
+            >
+            <div style="margin: 20px">
+              <p>Зображення в браузері</p>
+              <img src="Знімок екрана 2024-09-29 192610.png" style="height: 210px; width: 230px" />
+            </div>
+          </div>
+          <div id="point2_6" style="display: none">
+            <p style="margin:20px">СУСІДНІ СЕЛЕКТОРИ</p>
+            <textarea style="height: 400px; margin:20px">
+              Програмний HTML-код:
+              <div class="second-scientist">
+                <img
+                  src="images/pexels-marketinconmartin-5551476.jpg"
+                  style="height: 432px; width: 404px"
+                />
+                <p style="width: 404px">
+                  Lorem ipsum odor amet, consectetuer adipiscing elit. Aptent dui aptent
+                  diam turpis cras fames habitasse rhoncus. Tristique a tempor habitasse
+                  ultrices euismod est. Magna sagittis aenean nullam cubilia nisl
+                  feugiat suscipit eros? Cras felis lectus class dapibus nec. Porttitor
+                  risus etiam vel mollis augue hac ipsum. Lacus in turpis ipsum
+                  porttitor arcu pharetra. Consequat condimentum fusce, eros himenaeos
+                  egestas suspendisse odio hendrerit. Ac imperdiet nisl semper viverra,
+                  leo rutrum facilisis.
+                </p>
+              </div>
+              
+              Програмний CSS-код:
+              img + p {
+                width: 404px;
+              }
+              </textarea
+            >
+            <div style="margin: 20px">
+              <p>Зображення в браузері</p>
+              <img src="Знімок екрана 2024-09-29 194851.png" style="height: 460px; width: 402px" />
+            </div>
+            <p style="margin:20px">ДОЧІРНІ СЕЛЕКТОРИ</p>
+            <textarea style="margin:20px">
+              Програмний HTML-код:
+              <div class="description">
+                <p>See recent data on planets</p>
+                <p>See recent data on stars</p>
+                <p>See recent data on galaxies</p>
+                <p>See recent data on moons</p>
+              </div>
+
+              Програмний CSS-код:
+              .description > p {
+               width: 164px;
+               font-size: 18px;
+               color: #1f2937;
+              }
+              </textarea
+            >
+            <div style="margin: 20px">
+              <p>Зображення в браузері</p>
+              <img src="Знімок екрана 2024-09-29 200809.png" style="height: 160px; width:716px" />
+            </div>
+            <p style="margin:20px">СЕЛЕКТОР АТРИБУТА</p>
+            <textarea style="height: 400px; margin:20px">
+              Програмний HTML-код:
+              <ul>
+                <li>
+                  <a
+                    href="https://uk.wikipedia.org/wiki/%D0%9F%D0%BB%D0%B0%D0%BD%D0%B5%D1%82%D0%B0"
+                    >Planets</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://uk.wikipedia.org/wiki/%D0%97%D0%BE%D1%80%D1%8F"
+                    >Stars</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://uk.wikipedia.org/wiki/%D0%93%D0%B0%D0%BB%D0%B0%D0%BA%D1%82%D0%B8%D0%BA%D0%B0"
+                    >Galaxies</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://uk.wikipedia.org/wiki/%D0%A1%D1%83%D0%BF%D1%83%D1%82%D0%BD%D0%B8%D0%BA"
+                    >Moons</a
+                  >
+                </li>
+              </ul>
+              
+              Програмний CSS-код:
+              a[href*="wikipedia.org"] {
+                text-decoration: none;
+              }
+              
+              a[href*="wikipedia.org"]:link {
+                color: #f2d9dd;
+              }
+              
+              a[href*="wikipedia.org"]:visited {
+                color: #d0a5b2;
+              }
+              
+              a[href*="wikipedia.org"]:focus {
+                color: #ffccff;
+              }
+              
+              a[href*="wikipedia.org"]:hover {
+                color: #ffb3d9;
+              }
+              
+              a[href*="wikipedia.org"]:active {
+                color: #ff99cc;
+              }
+              </textarea
+            >
+            <div style="margin: 20px">
+              <p>Зображення в браузері</p>
+              <img src="Знімок екрана 2024-09-29 213111.png" style="width:1000px" />
+            </div>
+            <p style="margin:20px">Універсальний селектор</p>
+            <textarea style="height: 400px; margin:20px">
+              Програмний HTML-код:
+              <ul>
+                <li>
+                  <a
+                    href="https://uk.wikipedia.org/wiki/%D0%9F%D0%BB%D0%B0%D0%BD%D0%B5%D1%82%D0%B0"
+                    >Planets</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://uk.wikipedia.org/wiki/%D0%97%D0%BE%D1%80%D1%8F"
+                    >Stars</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://uk.wikipedia.org/wiki/%D0%93%D0%B0%D0%BB%D0%B0%D0%BA%D1%82%D0%B8%D0%BA%D0%B0"
+                    >Galaxies</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://uk.wikipedia.org/wiki/%D0%A1%D1%83%D0%BF%D1%83%D1%82%D0%BD%D0%B8%D0%BA"
+                    >Moons</a
+                  >
+                </li>
+              </ul>
+              
+              Програмний CSS-код:
+              * {
+                font-family: "Alkalami", sans-serif;
+              }
+              
+              </textarea
+            >
+            <div style="margin: 20px">
+              <p style="margin:20px">Зображення в браузері</p>
+              <img src="Знімок екрана 2024-09-29 214125.png" style="width:617px; height: 308px" />
+            </div>
+          </div>
+          <div id="point2_7" style="display: none">    <p>Шрифти:</p>
+            <textarea>
+              * {
+                font-family: "Alkalami", sans-serif;
+              }
+            </textarea>
+            <p>Контури:</p>
+            <textarea>input {
+              height: 50px;
+              width: 923px;
+              background-color: #fffade;
+              opacity: 0.6;
+              border-radius: 10px;
+              box-shadow: 8px 8px 15px #513a5f;
+              font-family: "Alkalami", sans-serif;
+              font-size: 18px;
+              display: flex;
+              align-items: center;
+              border: none;
+              background-size: 35px 35px;
+              background-image: url("images/magnifying-glass.png");
+              background-position: 10px 10px;
+              background-repeat: no-repeat;
+              padding-left: 50px;
+              padding-top: 10px;
+            }</textarea>
+            <p>Фон:</p>
+            <textarea>input {
+              height: 50px;
+              width: 923px;
+              background-color: #fffade;
+              opacity: 0.6;
+              border-radius: 10px;
+              box-shadow: 8px 8px 15px #513a5f;
+              font-family: "Alkalami", sans-serif;
+              font-size: 18px;
+              display: flex;
+              align-items: center;
+              border: none;
+              background-size: 35px 35px;
+              background-image: url("images/magnifying-glass.png");
+              background-position: 10px 10px;
+              background-repeat: no-repeat;
+              padding-left: 50px;
+              padding-top: 10px;
+            }</textarea>
+            <p>Колір тексту:</p>
+            <textarea>.header-content li {
+              width: 191px;
+              height: 25px;
+              font-size: 18px;
+              text-align: center;
+              color: #f2d9dd;
+            }
+            </textarea>
+            <p>CSS-властивості для таблиць, багаторівневих списків</p>
+            <textarea>table {
+              border-collapse: collapse;
+              width: 80%;
+              color: #f2d9dd;
+            }
+            
+            td,
+            th {
+              border: 1px solid #f2d9dd;
+              text-align: left;
+              padding: 8px;
+            }
+            </textarea>
+            <p>CSS Просунутий</p>
+           <textarea>
+            Заокруглені кути:
+            .images img {
+              border-radius: 5px;
+              width: 164px;
+              height: 164px;
+            }
+  
+            Shadow box:
+            *.first-content {
+              border-radius: 10px;
+              height: 340px;
+              background-color: #86206e;
+              width: 1108px;
+              display: flex;
+              flex-direction: row;
+              justify-content: space-around;
+              align-items: center;
+              color: #f2d9dd;
+              box-shadow: 8px 8px 15px #1c1141;
+              box-shadow: inset 0px 0px 40px 40px #2a1963;
+            }
+           </textarea>
+  
+  </div>
+      <div id="point2_8" style="display: none">
+        <p>За допомогою другої лабораторної роботи я придбала навички роботи з селекторами, ідентифікаторами, списками, різноманітними властивостями кольору й фону, зовнішніми та внутрішніми відступами, плаваючими елементами, оформленням текстових елементів.</p>
+      </div>
+   
+          </div>
+
+        
         </div>
       </div>
     </div>
