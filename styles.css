@@ -74,6 +74,11 @@ h3 {
   width: 1300px;
   border-radius: 15px;
   overflow-y: scroll;
+  -ms-overflow-style: none;
+}
+
+.field-describe::-webkit-scrollbar {
+  display: none;
 }
 
 .field-field {

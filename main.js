@@ -10,7 +10,7 @@ function showLab1Tasks() {
   var labContainer = document.querySelector(".tasks");
   labContainer.innerHTML = `
     <button class="task" onClick="showPoint1()">Опис предметного середовища</button>
-    <button class="task" onClick="showPoint2()">Тема, Мета</button>
+    <button class="task" onClick="showPoint2()">Тема, Мета, Місце</button>
     <button class="task" onClick="showPoint3()">Структура документів</button>
     <button class="task" onClick="showPoint4()">HTML-код таблиці</button>
     <button class="task" onClick="showPoint5()">HTML-код форми</button>
