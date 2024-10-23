@@ -34,7 +34,9 @@
         <button class="lab" id="lab2" onClick="showLab2Tasks()">
           Лабораторна №2
         </button>
-        <button class="lab">Лабораторна №3</button>
+        <button class="lab" id="lab3" onClick="showLab3Tasks()">
+          Лабораторна №3
+        </button>
         <button class="lab">Лабораторна №4</button>
         <button class="lab">Лабораторна №5</button>
         <button class="lab">Лабораторна №6</button>
@@ -44,7 +46,7 @@
       </div>
     </div>
     <div class="lab-describe" id="hide">
-      <div class="tasks" id="hide">
+      <div class="tasks" id="hide" style="margin-top: 20px">
         <button class="task" onClick="showPoint1()">
           Опис предметного середовища
         </button>
@@ -58,19 +60,22 @@
         <button class="task" onClick="showPoint7()">Висновки</button>
       </div>
       <div class="field-field">
-        <div class="field-describe" style="margin:30px">
+        <div class="field-describe" style="margin: 30px">
           <div id="point1" style="display: none; margin: 10px; width: 500px">
             <h1>Тема:</h1>
             <p>Веб-застосунок для отримання даних про небесні тіла</p>
             <h1>Мета:</h1>
-            <p>Забезпечити користувачів усією необідною інформацією про планети, зорі, галактики, супутники </p>
+            <p>
+              Забезпечити користувачів усією необідною інформацією про планети,
+              зорі, галактики, супутники
+            </p>
             <h1>Опис предметної області:</h1>
             <p>
-              Застосунок для пошуку відомостей про визначене небесне
-              тіло за ключовим словом або категорією. Головний розділ містить в
-              собі декілька різновидів астрономічних об'єктів і надає загальну
-              інформацію про додаток. Опис доповнює панель коментарів з можливістю їх
-              написання, редагування й видалення.
+              Застосунок для пошуку відомостей про визначене небесне тіло за
+              ключовим словом або категорією. Головний розділ містить в собі
+              декілька різновидів астрономічних об'єктів і надає загальну
+              інформацію про додаток. Опис доповнює панель коментарів з
+              можливістю їх написання, редагування й видалення.
             </p>
             <h1>Сценарій роботи:</h1>
             <p>Можливості користувача:</p>
@@ -80,21 +85,20 @@
               <li>Редагування коментарів</li>
               <li>Видалення коментарів</li>
             </ul>
-            
-            
           </div>
-          <div id="point2" style="display: none; margin: 10px;">
+          <div id="point2" style="display: none; margin: 10px; width: 500px">
             <p>
-              <b>Тема:</b> СТРУКТУРА HTML-ДОКУМЕНТА. ВИБІР ПРЕДМЕТНОЇ ГАЛУЗІ. РОБОТА З
-              ПОСИЛАННЯМИ, ТАБЛИЦЯМИ, ЗОБРАЖЕННЯМИ, СПИСКАМИ в HTML-ДОКУМЕНТІ.
+              <b>Тема:</b> СТРУКТУРА HTML-ДОКУМЕНТА. ВИБІР ПРЕДМЕТНОЇ ГАЛУЗІ.
+              РОБОТА З ПОСИЛАННЯМИ, ТАБЛИЦЯМИ, ЗОБРАЖЕННЯМИ, СПИСКАМИ в
+              HTML-ДОКУМЕНТІ.
             </p>
             <p>
               <b>Мета:</b> придбати практичні навички роботи з HTML-документом,
-              таблицями, , зображеннями, посиланнями, списками, формами Створити
+              таблицями, зображеннями, посиланнями, списками, формами Створити
               шаблон звітного HTML-документом для відображення результатів
               роботи всіх лабораторних робіт.
             </p>
-            <pre style="font-family: 'Vollkorn';">
+            <pre style="font-family: 'Vollkorn'">
 Посилання на репозиторій веб-застосунку:
 https://github.com/fireflyy13/AstronomyWebSite
 
@@ -108,13 +112,13 @@ https://github.com/fireflyy13/WebLabs
 https://fireflyy13.github.io/WebLabs/
 
 Посилання на репозиторій самостійної роботи:
-"https://github.com/fireflyy13/WebIndividual
+https://github.com/fireflyy13/WebIndividual
 
 Посилання на живу сторінку самостійної роботи:
 https://github.com/fireflyy13/WebIndividual/
             </pre>
           </div>
-          <div id="point3" style="display: none; margin: 10px;">
+          <div id="point3" style="display: none; margin: 10px">
             <textarea>
                 <html>
                   <head>
@@ -135,7 +139,7 @@ https://github.com/fireflyy13/WebIndividual/
                 </textarea
             >
           </div>
-          <div id="point4" style="display: none; margin: 10px;">
+          <div id="point4" style="display: none; margin: 10px">
             <textarea rows="10" cols="50">
                 <table>
                     <tr>
@@ -195,14 +199,14 @@ https://github.com/fireflyy13/WebIndividual/
                   </table> </textarea
             >
           </div>
-          <div id="point5" style="display: none; margin: 10px;">
+          <div id="point5" style="display: none; margin: 10px">
             <textarea>
  <form class="search" method="get" action="">
                 <input type="text" name="search" placeholder="Search" />
               </form></textarea
             >
           </div>
-          <div id="point6" style="display: none; margin: 10px;">
+          <div id="point6" style="display: none; margin: 10px">
             <textarea>
                 <img
                 src="images/pexels-felixmittermeier-957040.jpg"
@@ -249,15 +253,19 @@ https://github.com/fireflyy13/WebIndividual/
               подальшого вивчення веб-розробки.
             </p>
           </div>
-          <div id="point2_1" style="display: none; margin: 10px;">
+          <div id="point2_1" style="display: none; margin: 10px; width: 500px">
             <p>
-              <b>Тема:</b> КАСКАДНІ ТАБЛИЦІ СТИЛІВ. СЕЛЕКТОРИ .ІДЕНТИФІКАТОРИ. СТИЛЬОВЕ ОФОРМЛЕННЯ ТЕКСТОВИХ ЕЛЕМЕНТІВ В HTML-ДОКУМЕНТАХ.
+              <b>Тема:</b> КАСКАДНІ ТАБЛИЦІ СТИЛІВ. СЕЛЕКТОРИ .ІДЕНТИФІКАТОРИ.
+              СТИЛЬОВЕ ОФОРМЛЕННЯ ТЕКСТОВИХ ЕЛЕМЕНТІВ В HTML-ДОКУМЕНТАХ.
             </p>
             <p>
-              <b>Мета:</b> придбати практичні навички роботи  з селекторами, ідентифікаторами, списками,  різноманітними властивостями кольору і фону,  зовнішними та внутрішними  відступами,  плаваючими елементами, оформленням текстових елементів
+              <b>Мета:</b> придбати практичні навички роботи з селекторами,
+              ідентифікаторами, списками, різноманітними властивостями кольору і
+              фону, зовнішними та внутрішними відступами, плаваючими елементами,
+              оформленням текстових елементів
             </p>
 
-            <pre style="font-family: 'Vollkorn';">
+            <pre style="font-family: 'Vollkorn'">
 Посилання на репозиторій веб-застосунку:
 https://github.com/fireflyy13/AstronomyWebSite
               
@@ -271,13 +279,14 @@ https://github.com/fireflyy13/WebLabs
 https://fireflyy13.github.io/WebLabs/
               
 Посилання на репозиторій самостійної роботи:
-"https://github.com/fireflyy13/WebIndividual
+https://github.com/fireflyy13/WebIndividual
               
 Посилання на живу сторінку самостійної роботи:
 https://github.com/fireflyy13/WebIndividual/
             </pre>
           </div>
-          <div id="point2_3" style="display: none; margin: 10px;">  <textarea style="height: 300px">
+          <div id="point2_3" style="display: none; margin: 10px">
+            <textarea style="height: 300px">
             Програмний HTML-код:
             <form class="search" method="get" action="">
               <input type="text" name="search" placeholder="Search" />
@@ -304,15 +313,18 @@ https://github.com/fireflyy13/WebIndividual/
               padding-top: 10px;
             }
             
-            </textarea
-          >
-          <div style="margin: 20px">
-            <p>Зображення в браузері</p>
-            <img src="Знімок екрана 2024-09-29 194015.png" style="width: 1000px" />
+            </textarea>
+            <div style="margin: 20px">
+              <p>Зображення в браузері</p>
+              <img
+                src="Знімок екрана 2024-09-29 194015.png"
+                style="width: 1000px"
+              />
+            </div>
           </div>
-        </div>
-          
-          <div id="point2_4" style="display: none; margin: 10px;"> <textarea style="height: 300px">
+
+          <div id="point2_4" style="display: none; margin: 10px">
+            <textarea style="height: 300px">
             Програмний HTML-код:
             <header>
               <nav>
@@ -373,12 +385,13 @@ https://github.com/fireflyy13/WebIndividual/
               justify-content: center;
               align-items: center;
             }</textarea
-          >
-          <div style="margin: 20px">
-            <p>Зображення в браузері</p>
-            <img src="image.png" style="width: 1000px" />
-          </div></div>
-          <div id="point2_5" style="display: none; margin: 10px;">
+            >
+            <div style="margin: 20px">
+              <p>Зображення в браузері</p>
+              <img src="image.png" style="width: 1000px" />
+            </div>
+          </div>
+          <div id="point2_5" style="display: none; margin: 10px">
             <textarea style="height: 150px">
               Програмний HTML-код:
               <div id="lists">
@@ -408,12 +421,15 @@ https://github.com/fireflyy13/WebIndividual/
             >
             <div style="margin: 20px">
               <p>Зображення в браузері</p>
-              <img src="Знімок екрана 2024-09-29 192610.png" style="height: 210px; width: 230px" />
+              <img
+                src="Знімок екрана 2024-09-29 192610.png"
+                style="height: 210px; width: 230px"
+              />
             </div>
           </div>
-          <div id="point2_6" style="display: none; margin: 10px;">
-            <p style="margin:20px">СУСІДНІ СЕЛЕКТОРИ</p>
-            <textarea style="height: 400px; margin:20px">
+          <div id="point2_6" style="display: none; margin: 10px">
+            <p style="margin: 20px">СУСІДНІ СЕЛЕКТОРИ</p>
+            <textarea style="height: 400px; margin: 20px">
               Програмний HTML-код:
               <div class="second-scientist">
                 <img
@@ -440,10 +456,13 @@ https://github.com/fireflyy13/WebIndividual/
             >
             <div style="margin: 20px">
               <p>Зображення в браузері</p>
-              <img src="Знімок екрана 2024-09-29 194851.png" style="height: 460px; width: 402px" />
+              <img
+                src="Знімок екрана 2024-09-29 194851.png"
+                style="height: 460px; width: 402px"
+              />
             </div>
-            <p style="margin:20px">ДОЧІРНІ СЕЛЕКТОРИ</p>
-            <textarea style="margin:20px">
+            <p style="margin: 20px">ДОЧІРНІ СЕЛЕКТОРИ</p>
+            <textarea style="margin: 20px">
               Програмний HTML-код:
               <div class="description">
                 <p>See recent data on planets</p>
@@ -462,10 +481,13 @@ https://github.com/fireflyy13/WebIndividual/
             >
             <div style="margin: 20px">
               <p>Зображення в браузері</p>
-              <img src="Знімок екрана 2024-09-29 200809.png" style="height: 160px; width:716px" />
+              <img
+                src="Знімок екрана 2024-09-29 200809.png"
+                style="height: 160px; width: 716px"
+              />
             </div>
-            <p style="margin:20px">СЕЛЕКТОР АТРИБУТА</p>
-            <textarea style="height: 400px; margin:20px">
+            <p style="margin: 20px">СЕЛЕКТОР АТРИБУТА</p>
+            <textarea style="height: 400px; margin: 20px">
               Програмний HTML-код:
               <ul>
                 <li>
@@ -522,10 +544,13 @@ https://github.com/fireflyy13/WebIndividual/
             >
             <div style="margin: 20px">
               <p>Зображення в браузері</p>
-              <img src="Знімок екрана 2024-09-29 213111.png" style="width:1000px" />
+              <img
+                src="Знімок екрана 2024-09-29 213111.png"
+                style="width: 1000px"
+              />
             </div>
-            <p style="margin:20px">Універсальний селектор</p>
-            <textarea style="height: 400px; margin:20px">
+            <p style="margin: 20px">Універсальний селектор</p>
+            <textarea style="height: 400px; margin: 20px">
               Програмний HTML-код:
               <ul>
                 <li>
@@ -562,18 +587,23 @@ https://github.com/fireflyy13/WebIndividual/
               </textarea
             >
             <div style="margin: 20px">
-              <p style="margin:20px">Зображення в браузері</p>
-              <img src="Знімок екрана 2024-09-29 214125.png" style="width:617px; height: 308px" />
+              <p style="margin: 20px">Зображення в браузері</p>
+              <img
+                src="Знімок екрана 2024-09-29 214125.png"
+                style="width: 617px; height: 308px"
+              />
             </div>
           </div>
-          <div id="point2_7" style="display: none; margin: 10px;">    <p>Шрифти:</p>
+          <div id="point2_7" style="display: none; margin: 10px">
+            <p>Шрифти:</p>
             <textarea>
               * {
                 font-family: "Alkalami", sans-serif;
               }
             </textarea>
             <p>Контури:</p>
-            <textarea>input {
+            <textarea>
+input {
               height: 50px;
               width: 923px;
               background-color: #fffade;
@@ -591,9 +621,11 @@ https://github.com/fireflyy13/WebIndividual/
               background-repeat: no-repeat;
               padding-left: 50px;
               padding-top: 10px;
-            }</textarea>
+            }</textarea
+            >
             <p>Фон:</p>
-            <textarea>input {
+            <textarea>
+input {
               height: 50px;
               width: 923px;
               background-color: #fffade;
@@ -611,9 +643,11 @@ https://github.com/fireflyy13/WebIndividual/
               background-repeat: no-repeat;
               padding-left: 50px;
               padding-top: 10px;
-            }</textarea>
+            }</textarea
+            >
             <p>Колір тексту:</p>
-            <textarea>.header-content li {
+            <textarea>
+.header-content li {
               width: 191px;
               height: 25px;
               font-size: 18px;
@@ -622,7 +656,8 @@ https://github.com/fireflyy13/WebIndividual/
             }
             </textarea>
             <p>CSS-властивості для таблиць, багаторівневих списків</p>
-            <textarea>table {
+            <textarea>
+table {
               border-collapse: collapse;
               width: 80%;
               color: #f2d9dd;
@@ -636,7 +671,7 @@ https://github.com/fireflyy13/WebIndividual/
             }
             </textarea>
             <p>CSS Просунутий</p>
-           <textarea>
+            <textarea>
             Заокруглені кути:
             .images img {
               border-radius: 5px;
@@ -658,17 +693,1434 @@ https://github.com/fireflyy13/WebIndividual/
               box-shadow: 8px 8px 15px #1c1141;
               box-shadow: inset 0px 0px 40px 40px #2a1963;
             }
-           </textarea>
-  
-  </div>
-      <div id="point2_8" style="display: none; margin: 10px; width: 500px">
-        <h1>Висновки:</h1>
-        <p>За допомогою другої лабораторної роботи я придбала навички роботи з селекторами, ідентифікаторами, списками, різноманітними властивостями кольору й фону, зовнішніми та внутрішніми відступами, плаваючими елементами, оформленням текстових елементів.</p>
-      </div>
-   
+           </textarea
+            >
+          </div>
+          <div id="point2_8" style="display: none; margin: 10px; width: 500px">
+            <h1>Висновки:</h1>
+            <p>
+              За допомогою другої лабораторної роботи я придбала навички роботи
+              з селекторами, ідентифікаторами, списками, різноманітними
+              властивостями кольору й фону, зовнішніми та внутрішніми
+              відступами, плаваючими елементами, оформленням текстових
+              елементів.
+            </p>
           </div>
 
-        
+          <div id="point3_1" style="display: none; margin: 20px; width: 500px">
+            <p>
+              <b>Тема:</b> ВЕРСТКА HTML-ДОКУМЕНТУ. БЛОКОВА ВЕРСТКА. ВЕРСТКА
+              ЗАСОБАМИ CSS та FLEXBOX.
+            </p>
+            <p>
+              <b>Мета:</b> придбати практичні навички роботи верстки сторінок
+              засобами CSS, верстки на основі плаваючих елементів, з’ясувати
+              переваги та недоліки типів макетів веб-сторінок; придбати
+              практичні навички роботи верстки сторінок засобами CSS та FLEXBOX.
+            </p>
+            <pre style="font-family: 'Vollkorn'">
+Посилання на репозиторій веб-застосунку:
+https://github.com/fireflyy13/AstronomyWebSite
+
+Посилання на живу сторінку веб-застосунку:
+https://fireflyy13.github.io/AstronomyWebSite/
+
+Посилання на репозиторій звітного html-документа:
+https://github.com/fireflyy13/WebLabs
+          
+Посилання на живу сторінку звітного html-документа:
+https://fireflyy13.github.io/WebLabs/
+
+Посилання на репозиторій 2-го та 3-го завдань:
+https://fireflyy13.github.io/Lab3WEB
+
+Посилання на живу сторінку 2-го та 3-го завдань:
+https://fireflyy13.github.io/Lab3WEB/
+        </pre
+            >
+          </div>
+          <div id="point3_2" style="display: none">
+            <b>Зовнішній вигляд макету</b><br />
+            <img src="image copy.png" />
+            <img src="Знімок екрана 2024-10-23 194423.png" />
+            <img src="Знімок екрана 2024-10-23 194438.png" />
+            <img src="image copy 2.png" /><br />
+            <b>Код макету</b><br />
+            <i>HTML:</i><br />
+            <textarea>
+<!DOCTYPE html>
+          <html lang="en">
+            <head>
+              <meta charset="UTF-8" />
+              <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+              <title>Document</title>
+              <link rel="stylesheet" href="styles.css" />
+              <link href="https://fonts.cdnfonts.com/css/alkalami" rel="stylesheet" />
+            </head>
+            <body>
+              <header>
+                <nav>
+                  <ul>
+                    <li
+                      class="logo"
+                      style="
+                        max-width: 191px;
+                        height: 25px;
+                        font-size: 18px;
+                        text-align: center;
+                        color: #f2d9dd;
+                      "
+                    >
+                      Astrod
+                    </li>
+                    <li>
+                      <a
+                        href="https://uk.wikipedia.org/wiki/%D0%9F%D0%BB%D0%B0%D0%BD%D0%B5%D1%82%D0%B0"
+                        >Planets</a
+                      >
+                    </li>
+                    <li>
+                      <a href="https://uk.wikipedia.org/wiki/%D0%97%D0%BE%D1%80%D1%8F"
+                        >Stars</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="https://uk.wikipedia.org/wiki/%D0%93%D0%B0%D0%BB%D0%B0%D0%BA%D1%82%D0%B8%D0%BA%D0%B0"
+                        >Galaxies</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="https://uk.wikipedia.org/wiki/%D0%A1%D1%83%D0%BF%D1%83%D1%82%D0%BD%D0%B8%D0%BA"
+                        >Moons</a
+                      >
+                    </li>
+                  </ul>
+                </nav>
+              </header>
+          
+              <main>
+                <div class="page1">
+                  <div class="first-space">
+                    <div class="first-content">
+                      <div class="text-f-content">
+                        <p style="width: 554px; font-size: 18px">
+                          Lorem ipsum odor amet, consectetuer adipiscing elit. Aptent dui
+                          aptent diam turpis cras fames habitasse rhoncus. Tristique a
+                          tempor habitasse ultrices euismod est. Magna sagittis aenean
+                          nullam cubilia nisl feugiat suscipit eros? Cras felis lectus
+                          class dapibus nec. Porttitor risus etiam vel mollis augue hac
+                          ipsum. Lacus in turpis ipsum porttitor arcu pharetra. Consequat
+                          condimentum fusce, eros himenaeos egestas suspendisse odio
+                          hendrerit.
+                        </p>
+                      </div>
+                      <div style="display: flex; justify-content: center">
+                        <img
+                          src="images/pexels-felixmittermeier-957040.jpg"
+                          style="
+                            height: auto;
+                            width: 80%;
+                            max-width: 432px;
+                            border-radius: 5px;
+                            box-shadow: 8px 8px 15px rgba(0, 0, 0, 0.5);
+                          "
+                        />
+                      </div>
+                    </div>
+                  </div>
+          
+                  <section class="images">
+                    <div class="img-desc">
+                      <img src="images/earth-blue-planet-globe-planet-41953.jpeg" />
+                      <p>See recent data on planets</p>
+                    </div>
+                    <div class="img-desc">
+                      <img src="images/sun-fireball-solar-flare-sunlight-87611.jpeg" />
+                      <p>See recent data on stars</p>
+                    </div>
+                    <div class="img-desc">
+                      <img
+                        src="images/free-photo-of-barred-spiral-andromeda-galaxy.jpeg"
+                      />
+                      <p>See recent data on galaxies</p>
+                    </div>
+                    <div class="img-desc">
+                      <img src="images/pexels-pixabay-47367.jpg" />
+                      <p>See recent data on moons</p>
+                    </div>
+                  </section>
+          
+                  <div class="search-content">
+                    <form class="search" method="get" action="">
+                      <input type="text" name="search" placeholder="Search" />
+                    </form>
+                  </div>
+                </div>
+          
+                <div class="page2">
+                  <div class="first-scientist">
+                    <p style="margin-bottom: 20px">
+                      Lorem ipsum odor amet, consectetuer adipiscing elit. Aptent dui
+                      aptent diam turpis cras fames habitasse rhoncus. Tristique a tempor
+                      habitasse ultrices euismod est. Magna sagittis aenean nullam cubilia
+                      nisl feugiat suscipit eros? Cras felis lectus class dapibus nec.
+                      Porttitor risus etiam vel mollis augue hac ipsum. Lacus in turpis
+                      ipsum porttitor arcu pharetra. Consequat condimentum fusce, eros
+                      himenaeos egestas suspendisse odio hendrerit. Ac imperdiet nisl
+                      semper viverra, leo rutrum facilisis nunc. Nisl aptent primis tellus
+                      libero etiam nibh primis nascetur platea.
+                    </p>
+                    <img
+                      src="images/free-photo-of-a-statue-of-a-man-holding-a-book-in-front-of-a-brick-building.jpeg"
+                      style="height: auto; width: 80%; max-width: 562px"
+                    />
+                  </div>
+          
+                  <div class="second-scientist">
+                    <img
+                      src="images/pexels-marketinconmartin-5551476.jpg"
+                      style="height: auto; width: 80%; max-width: 404px"
+                    />
+                    <p style="margin-top: 20px">
+                      Lorem ipsum odor amet, consectetuer adipiscing elit. Aptent dui
+                      aptent diam turpis cras fames habitasse rhoncus. Tristique a tempor
+                      habitasse ultrices euismod est. Magna sagittis aenean nullam cubilia
+                      nisl feugiat suscipit eros? Cras felis lectus class dapibus nec.
+                      Porttitor risus etiam vel mollis augue hac ipsum. Lacus in turpis
+                      ipsum porttitor arcu pharetra. Consequat condimentum fusce, eros
+                      himenaeos egestas suspendisse odio hendrerit. Ac imperdiet nisl
+                      semper viverra, leo rutrum facilisis.
+                    </p>
+                  </div>
+                </div>
+          
+                <div class="page3">
+                  <div class="main-text">
+                    <h1>Lorem ipsum dolor sit amet</h1>
+                    <h2>Lorem ipsum dolor sit amet</h2>
+                  </div>
+                  <div class="star-image">
+                    <img
+                      src="images/stars.png"
+                      style="height: 72px; width: 72px; margin: 30px"
+                    />
+                  </div>
+                  <div id="lists">
+                    <h2>
+                      <ul>
+                        <li>Lorem ipsum</li>
+                        <li>dolor sit amet</li>
+                        <li>consectetur</li>
+                        <li>adipiscing elit</li>
+                        <li>Ut pulvinar</li>
+                      </ul>
+                      <ol>
+                        <li>felis tempor</li>
+                        <li>dictum nisi</li>
+                        <li>et placerat eros</li>
+                        <li>Ut tempor libero</li>
+                      </ol>
+                    </h2>
+                  </div>
+                </div>
+          
+                <div class="page4">
+                  <h1>The Main Planet Data Table</h1>
+                  <table>
+                    <tr>
+                      <th>Planet</th>
+                      <th>Diameter(km)</th>
+                      <th>Average temperature (degrees Celsius)</th>
+                      <th>Rings and Moons</th>
+                    </tr>
+                    <tr>
+                      <td>Mercury</td>
+                      <td>4879</td>
+                      <td>179</td>
+                      <td>0</td>
+                    </tr>
+                    <tr>
+                      <td>Venus</td>
+                      <td>12104</td>
+                      <td>482</td>
+                      <td>0</td>
+                    </tr>
+                    <tr>
+                      <td>Earth</td>
+                      <td>12756</td>
+                      <td>15</td>
+                      <td>1 moon</td>
+                    </tr>
+                    <tr>
+                      <td>Mars</td>
+                      <td>6756</td>
+                      <td>-63</td>
+                      <td>2 moons</td>
+                    </tr>
+                    <tr>
+                      <td>Jupiter</td>
+                      <td>142984</td>
+                      <td>-121</td>
+                      <td>60 moons + rings</td>
+                    </tr>
+                    <tr>
+                      <td>Saturn</td>
+                      <td>120536</td>
+                      <td>-125</td>
+                      <td>31 moons + rings</td>
+                    </tr>
+                    <tr>
+                      <td>Uranus</td>
+                      <td>51118</td>
+                      <td>-193</td>
+                      <td>27 moons + rings</td>
+                    </tr>
+                    <tr>
+                      <td>Neptune</td>
+                      <td>49528</td>
+                      <td>-173</td>
+                      <td>13 moons + rings</td>
+                    </tr>
+                  </table>
+                </div>
+              </main>
+          
+              <footer style="background-color: #2a1963">
+                <div class="conclusion">
+                  <h3>
+                    <a href="https://github.com/fireflyy13">Lorem ipsum dolor sit amet</a>
+                  </h3>
+                </div>
+              </footer>
+            </body>
+          </html>
+          </textarea
+            >
+            <i>CSS:</i><br />
+            <textarea>
+body {
+              font-family: "Vollkorn";
+              background-color: #e2d8d7;
+            }
+            
+            .header {
+              height: 300px;
+              display: flex;
+              justify-content: space-evenly;
+              align-items: center;
+              flex-direction: row;
+            }
+            
+            .header h1,
+            h2,
+            h3 {
+              margin: 10px;
+            }
+            
+            .info {
+              height: 100%;
+              width: 100%;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+            }
+            
+            .lab-container {
+              height: 70px;
+              width: 100%;
+              display: flex;
+              gap: 10px;
+              justify-content: space-evenly;
+              align-items: center;
+              background-color: #dad0ce;
+            }
+            
+            .lab {
+              width: 150px;
+              height: 60px;
+              background-color: #9e7e7e;
+              border-radius: 5px;
+              color: #f5f1e8;
+            }
+            
+            .tasks {
+              height: 500px;
+              width: 175px;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              flex-direction: column;
+              gap: 16px;
+              border-radius: 5px;
+            }
+            
+            .task {
+              width: 150px;
+              height: 60px;
+              background-color: #9e7e7e;
+              border-radius: 5px;
+              color: #f5f1e8;
+            }
+            
+            .lab-describe {
+              display: flex;
+              flex-direction: row;
+              justify-content: space-between;
+            }
+            
+            .field-describe {
+              background-color: #dad0ce;
+              height: 470px;
+              width: 1300px;
+              border-radius: 15px;
+              overflow-y: scroll;
+              -ms-overflow-style: none;
+            }
+            
+            .field-describe::-webkit-scrollbar {
+              display: none;
+            }
+            
+            .field-field {
+              width: 100%;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+            }
+            
+            .task {
+              border-radius: 24px;
+              border-style: none;
+              box-shadow: rgba(0, 0, 0, 0.2) 0 3px 5px -1px,
+                rgba(0, 0, 0, 0.14) 0 6px 10px 0, rgba(0, 0, 0, 0.12) 0 1px 18px 0;
+              box-sizing: border-box;
+              cursor: pointer;
+              height: 48px;
+              transition: box-shadow 280ms cubic-bezier(0.4, 0, 0.2, 1),
+                opacity 15ms linear 30ms, transform 270ms cubic-bezier(0, 0, 0.2, 1) 0ms;
+              font-weight: 600;
+            }
+            
+            .task:hover {
+              background: #a98886;
+            }
+            
+            .task:active {
+              box-shadow: 0 4px 4px 0 rgb(60 64 67 / 30%),
+                0 8px 12px 6px rgb(60 64 67 / 15%);
+              outline: none;
+            }
+            
+            .lab {
+              border-radius: 24px;
+              font-weight: 600;
+              border-style: none;
+              box-shadow: rgba(0, 0, 0, 0.2) 0 3px 5px -1px,
+                rgba(0, 0, 0, 0.14) 0 6px 10px 0, rgba(0, 0, 0, 0.12) 0 1px 18px 0;
+              box-sizing: border-box;
+              cursor: pointer;
+              height: 48px;
+              transition: box-shadow 280ms cubic-bezier(0.4, 0, 0.2, 1),
+                opacity 15ms linear 30ms, transform 270ms cubic-bezier(0, 0, 0.2, 1) 0ms;
+            }
+            
+            .lab:hover {
+              background: #a98886;
+            }
+            
+            .lab:active {
+              box-shadow: 0 4px 4px 0 rgb(60 64 67 / 30%),
+                0 8px 12px 6px rgb(60 64 67 / 15%);
+              outline: none;
+            }
+            
+            textarea {
+              background-color: transparent;
+              border: none;
+              padding: 10px;
+              font-family: Arial, sans-serif;
+              font-size: 14px;
+              width: 100%;
+              height: 450px;
+              resize: none;
+              border-radius: 5px;
+              box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+              outline: none;
+            }
+            
+            .tasks {
+              display: none;
+            }
+            
+            .field-describe div {
+              margin: 20px;
+            }
+            
+            #point3_2 img {
+              width: 90%;
+              height: auto;
+              margin: 10px;
+            }
+            </textarea>
+          </div>
+          <div id="point3_3" style="display: none">
+            <b>Зовнішній вигляд макету</b><br />
+            <img src="Знімок екрана 2024-10-23 204020.png" /><br />
+            <b>Код макету</b><br />
+            <i>HTML:</i><br />
+            <textarea>
+<!DOCTYPE html>
+              <html lang="en">
+                <head>
+                  <meta charset="UTF-8" />
+                  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+                  <title>Document</title>
+                  <link rel="stylesheet" href="styles.css" />
+                </head>
+                <body>
+                  <main>
+                    <table>
+                      <tr>
+                        <td class="empty" rowspan="4"></td>
+                        <td class="blue" colspan="2">1</td>
+                        <td class="empty" rowspan="4"></td>
+                      </tr>
+              
+                      <tr>
+                        <td class="second" rowspan="2">2</td>
+                        <td class="fifth">5</td>
+                      </tr>
+                      <tr>
+                        <td class="fourth">4</td>
+                      </tr>
+                      <tr>
+                        <td class="blue" colspan="2">3</td>
+                      </tr>
+                    </table>
+                  </main>
+                </body>
+              </html>
+               </textarea
+            >
+            <i>CSS:</i><br />
+            <textarea>
+            main {
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              min-height: 700px;
+              font-size: 18px;
+              font-weight: bold;
+              font-family: sans-serif;
+            }
+            
+            table {
+              width: 380px;
+              border-collapse: collapse;
+            }
+            
+            td {
+              border: 2px solid black;
+              text-align: center;
+            }
+            
+            .blue {
+              height: 50px;
+              width: 100px;
+              background-color: rgb(34, 34, 236);
+            }
+            
+            .empty {
+              width: 30px;
+              height: 400px;
+            }
+            
+            .second {
+              background-color: rgb(249, 208, 6);
+              width: 70px;
+              height: 100px;
+            }
+            
+            .fifth {
+              background-color: rgb(249, 208, 6);
+              height: 50px;
+            }
+            
+            .fourth {
+              height: 250px;
+            }
+            </textarea>
+          </div>
+          <div id="point3_4" style="display: none">
+            <b>Зовнішній вигляд макету</b><br />
+            <img src="Знімок екрана 2024-10-23 204707.png" /><br />
+            <b>Код макету</b><br />
+            <i>HTML:</i><br />
+            <textarea>
+<!DOCTYPE html>
+              <html lang="en">
+                <head>
+                  <meta charset="UTF-8" />
+                  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+                  <title>Document</title>
+                  <link rel="stylesheet" href="styles.css" />
+                </head>
+                <body>
+                  <main>
+                    <table>
+                      <tr>
+                        <td class="empty" rowspan="4"></td>
+                        <td class="blue" colspan="2">1</td>
+                        <td class="empty" rowspan="4"></td>
+                      </tr>
+                      <tr>
+                        <td class="second" rowspan="2">2</td>
+                        <td class="fifth">5</td>
+                      </tr>
+                      <tr>
+                        <td class="fourth">4</td>
+                      </tr>
+                      <tr>
+                        <td class="blue" colspan="2">3</td>
+                      </tr>
+                    </table>
+                  </main>
+                </body>
+              </html>
+               </textarea
+            >
+            <i>CSS:</i><br />
+            <textarea>
+main {
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              min-height: 700px;
+              font-size: 18px;
+              font-weight: bold;
+              font-family: sans-serif;
+            }
+            
+            table {
+              width: 27%;
+              border-collapse: collapse;
+            }
+            
+            td {
+              border: 2px solid black;
+              text-align: center;
+            }
+            
+            .blue {
+              width: 85%;
+              background-color: rgb(34, 34, 236);
+              height: 50px;
+            }
+            
+            .empty {
+              width: 30px;
+              height: 400px;
+            }
+            
+            .second {
+              background-color: rgb(249, 208, 6);
+              width: 18%;
+            }
+            
+            .fifth {
+              background-color: rgb(249, 208, 6);
+              height: 50px;
+            }
+            
+            .fourth {
+              height: 250px;
+            }
+             </textarea
+            >
+          </div>
+          <div id="point3_5" style="display: none">
+            <b>Зовнішній вигляд макету</b><br />
+            <img src="Знімок екрана 2024-10-23 205017.png" /><br />
+            <b>Код макету</b><br />
+            <i>HTML:</i><br />
+            <textarea>
+<!DOCTYPE html>
+              <html lang="en">
+                <head>
+                  <meta charset="UTF-8" />
+                  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+                  <title>Document</title>
+                  <link rel="stylesheet" href="styles.css" />
+                </head>
+                <body>
+                  <main>
+                    <div class="container">
+                      <div class="blue top"><p>1</p></div>
+                      <div class="main-content">
+                        <div class="second"><p>2</p></div>
+                        <div class="two">
+                          <div class="fifth"><p>5</p></div>
+                          <div class="fourth"><p>4</p></div>
+                        </div>
+                      </div>
+                      <div class="blue bottom"><p>3</p></div>
+                    </div>
+                  </main>
+                </body>
+              </html>
+               </textarea
+            >
+            <i>CSS:</i><br />
+            <textarea>
+ main {
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              min-height: 700px;
+              font-size: 18px;
+              font-weight: bold;
+              font-family: sans-serif;
+              margin: 0;
+            }
+            
+            .container {
+              display: flex;
+              width: 380px;
+              border: 2px solid black;
+              font-weight: bold;
+              padding-left: 30px;
+              padding-right: 30px;
+              flex-direction: column;
+              justify-content: space-between;
+              box-sizing: border-box;
+            }
+            
+            div {
+              text-align: center;
+            }
+            
+            .blue {
+              height: 50px;
+              background-color: blue;
+              color: white;
+              text-align: center;
+              border-left: 2px solid black;
+              border-right: 2px solid black;
+            }
+            
+            .main-content {
+              display: flex;
+              justify-content: flex-start;
+            }
+            
+            .second {
+              width: 70px;
+              height: 310px;
+              background-color: rgb(255, 208, 0);
+              text-align: center;
+              border: 2px solid black;
+              border-right: 0px;
+              box-sizing: border-box;
+            }
+            
+            .two {
+              display: flex;
+              flex-direction: column;
+              flex-grow: 1;
+              margin-left: 0;
+              border: 2px solid black;
+              box-sizing: border-box;
+            }
+            
+            .fifth {
+              height: 50px;
+              text-align: center;
+              background-color: rgb(255, 208, 0);
+            }
+            
+            .fourth {
+              flex-grow: 1;
+              height: 250px;
+              background-color: white;
+              text-align: center;
+              border-top: 2px solid black;
+              border-bottom: 0px;
+              box-sizing: border-box;
+            }
+            </textarea>
+          </div>
+          <div id="point3_6" style="display: none">
+            <b>Зовнішній вигляд макету</b><br />
+            <img src="Знімок екрана 2024-10-23 205111.png" /><br />
+            <b>Код макету</b><br />
+            <i>HTML:</i><br />
+            <textarea>
+ <!DOCTYPE html>
+              <html lang="en">
+                <head>
+                  <meta charset="UTF-8" />
+                  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+                  <title>Document</title>
+                  <link rel="stylesheet" href="styles.css" />
+                </head>
+                <body>
+                  <main>
+                    <div class="container">
+                      <div class="blue top"><p>1</p></div>
+                      <div class="main-content">
+                        <div class="second"><p>2</p></div>
+                        <div class="two">
+                          <div class="fifth"><p>5</p></div>
+                          <div class="fourth"><p>4</p></div>
+                        </div>
+                      </div>
+                      <div class="blue bottom"><p>3</p></div>
+                    </div>
+                  </main>
+                </body>
+              </html>
+              </textarea
+            >
+            <i>CSS:</i><br />
+            <textarea>
+main {
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              min-height: 700px;
+              font-size: 18px;
+              font-weight: bold;
+              font-family: sans-serif;
+              margin: 0;
+            }
+            
+            .container {
+              display: flex;
+              width: 27%;
+              border: 2px solid black;
+              font-weight: bold;
+              padding-left: 2%;
+              padding-right: 2%;
+              flex-direction: column;
+              justify-content: space-between;
+              box-sizing: border-box;
+            }
+            
+            div {
+              text-align: center;
+            }
+            
+            .blue {
+              height: 50px;
+              background-color: blue;
+              color: white;
+              text-align: center;
+              border-left: 2px solid black;
+              border-right: 2px solid black;
+            }
+            
+            .main-content {
+              display: flex;
+              justify-content: flex-start;
+            }
+            
+            .second {
+              width: 18%;
+              height: 310px;
+              background-color: rgb(255, 208, 0);
+              text-align: center;
+              border: 2px solid black;
+              border-right: 0px;
+              box-sizing: border-box;
+            }
+            
+            .two {
+              display: flex;
+              flex-direction: column;
+              flex-grow: 1;
+              margin-left: 0;
+              border: 2px solid black;
+              box-sizing: border-box;
+            }
+            
+            .fifth {
+              height: 50px;
+              text-align: center;
+              background-color: rgb(255, 208, 0);
+            }
+            
+            .fourth {
+              flex-grow: 1;
+              height: 250px;
+              background-color: white;
+              text-align: center;
+              border-top: 2px solid black;
+              border-bottom: 0px;
+              box-sizing: border-box;
+            }
+             </textarea
+            >
+          </div>
+          <div id="point3_7" style="display: none">
+            <img src="Знімок екрана 2024-10-23 205701.png" /><br />
+            <img src="Знімок екрана 2024-10-23 205755.png" /><br />
+          </div>
+          <div id="point3_8" style="display: none">
+            <textarea>
+<!DOCTYPE html>
+              <html lang="en">
+                <head>
+                  <meta charset="UTF-8" />
+                  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+                  <link href="styles.css" rel="stylesheet" />
+                  <title>Document</title>
+                </head>
+                <body>
+                  <header>
+                    <div class="header">
+                      <button>Форми навчання</button>
+                      <button>Заходи</button>
+                      <button>Про Академію</button>
+                      <button>Контакти</button>
+                      <div class="dropdown">
+                        <button>
+                          <span class="text">Київ</span>
+                          <span class="arrow">▾</span>
+                        </button>
+                      </div>
+                    </div>
+                  </header>
+                  <main>
+                    <div class="first">
+                      <div class="left">
+                        <p class="left-title">
+                          КУРСИ ПРОГРАМУВАННЯ <br />
+                          <span style="color: #3197f2">З 100% ГАРАНТІЄЮ</span>
+                          ПРАЦЕВЛАШТУВАННЯ
+                        </p>
+                        <p class="left-desc">
+                          З SCHOOL ти отримаєш високооплачувану роботу своєї мрії. <br />Ми
+                          готуємо висококласних IT-спеціалістів
+                        </p>
+                      </div>
+                      <div class="right">
+                        <img src="images3/Знімок екрана 2024-10-20 175820.png" />
+                      </div>
+                    </div>
+                    <div class="second">
+                      <div class="adv-content">
+                        <div class="adv">
+                          <p style="font-weight: bold; margin-top: 15px">
+                            ВІДГУКИ ВІД РОБОТОДАВЦІВ
+                          </p>
+                          <p style="color: #fc973c; font-size: 36px; font-weight: bold">
+                            ПІДТВЕРДЖЕНА ЯКІСТЬ
+                          </p>
+                          <p
+                            style="
+                              font-weight: 600;
+                              width: 900px;
+                              color: rgba(0, 0, 0, 0.8);
+                              margin-top: 30px;
+                              display: flex;
+                              flex-wrap: wrap;
+                            "
+                          >
+                            Школа програмування - єдина, що має відгуки від роботодавців, які
+                            входять до списку найкращих компаній DOU.UA. А випускнини курсів з
+                            інкубатором отримують гарантії працевлаштування впродовж 6 місяців
+                            після успішного закінчення навчання. Але зазвичай їх забирають до
+                            себе наші офіційні партнери ще до закінчення курсу.
+                          </p>
+                        </div>
+                      </div>
+              
+                      <div class="reviews">
+                        <div class="emp">
+                          <img
+                            style="
+                              border-top: 3px solid black;
+                              border-bottom: 3px solid black;
+                            "
+                            src="images3/Знімок екрана 2024-10-15 185708.png"
+                          />
+                          <p
+                            style="font-size: 15px; color: rgba(0, 0, 0, 0.611); margin: 30px"
+                          >
+                            Відгук INCORA про випускників Okten
+                          </p>
+                        </div>
+                        <div class="companies">
+                          <div class="images">
+                            <img style="width: auto; height: 45px" src="images3/image.png" />
+                            <img
+                              style="width: auto; height: 45px"
+                              src="images3/image copy.png"
+                            />
+                            <img
+                              style="width: auto; height: 45px"
+                              src="images3/image copy 2.png"
+                            />
+                            <img
+                              style="width: auto; height: 45px"
+                              src="images3/image copy 3.png"
+                            />
+                            <img
+                              style="width: auto; height: 45px"
+                              src="images3/image copy 4.png"
+                            />
+                            <img
+                              style="width: auto; height: 45px"
+                              src="images3/image copy 5.png"
+                            />
+                            <img
+                              style="width: auto; height: 45px"
+                              src="images3/image copy 6.png"
+                            />
+                            <img
+                              style="width: auto; height: 45px"
+                              src="images3/image copy 7.png"
+                            />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="courses">
+                      <div class="courses-title">
+                        <p
+                          style="
+                            font-weight: bold;
+                            color: white;
+                            margin-top: 20px;
+                            margin-bottom: 0px;
+                          "
+                        >
+                          ПОПУЛЯРНІ НАПРЯМКИ
+                        </p>
+                        <p
+                          style="
+                            color: #fc973c;
+                            font-size: 36px;
+                            font-weight: bold;
+                            margin-top: 0px;
+                          "
+                        >
+                          КУРСІВ ПРОГРАМУВАННЯ
+                        </p>
+                      </div>
+                      <div class="cards">
+                        <div class="card">
+                          <img
+                            class="course-icon"
+                            src="images3/478d85330087acd75c9ffa664f61071c copy.png"
+                            style="margin-bottom: 10px; margin-top: 20px"
+                          />
+                          <p class="complex">Complex</p>
+                          <b class="bold-course">JAVASCRIPT</b>
+                          <p class="orange-course">Комплексний курс</p>
+                          <p class="course-describe">
+                            Стартовий рівень: початківець<br />
+                            Тривалість: 5-11 місяців<br />
+                            Ціна: від 14500 грн.
+                          </p>
+                          <p class="course-left">Залишилось 3 місця</p>
+                          <div class="divider"><a>Детальніше</a></div>
+                        </div>
+                        <div class="card">
+                          <img
+                            class="course-icon"
+                            src="images3/c89e85a97cdd06d78204dd72c6b6b6bb copy.png"
+                          />
+                          <p class="complex">Complex</p>
+                          <b class="bold-course">JAVA</b>
+                          <p class="orange-course">Комплексний курс</p>
+                          <p class="course-describe">
+                            Стартовий рівень: початківець<br />
+                            Тривалість: 6-11 місяців<br />
+                            Ціна: від 14500 грн.
+                          </p>
+                          <p class="course-left">Залишилось 3 місця</p>
+                          <div class="divider"><a>Детальніше</a></div>
+                        </div>
+                        <div class="card">
+                          <img
+                            class="course-icon"
+                            src="images3/c75b66a0418070a45298e7db1f66c65d copy.png"
+                            style="margin-bottom: 10px; margin-top: 20px"
+                          />
+                          <p class="complex">Complex</p>
+                          <b class="bold-course">PYTHON</b>
+                          <p class="orange-course">Комплексний курс</p>
+                          <p class="course-describe">
+                            Стартовий рівень: початківець<br />
+                            Тривалість: 6-11 місяців<br />
+                            Ціна: від 14500 грн.
+                          </p>
+                          <p class="course-left">Залишилось 3 місця</p>
+                          <div class="divider"><a>Детальніше</a></div>
+                        </div>
+                      </div>
+                    </div>
+                  </main>
+                  <footer>
+                    <div class="left-footer">
+                      <span style="margin: 3px">©</span>
+                      <p>2021</p>
+                    </div>
+                    <img src="images3/Знімок екрана 2024-10-16 191521.png" />
+                    <img src="images3/Знімок екрана 2024-10-16 191605.png" />
+                    <img src="images3/Знімок екрана 2024-10-16 191706.png" />
+                    <img src="images3/Знімок екрана 2024-10-16 191716.png" />
+                    <img src="images3/Знімок екрана 2024-10-16 191734.png" />
+                  </footer>
+                </body>
+              </html>
+              </textarea
+            >
+          </div>
+          <div id="point3_9" style="display: none">
+            <textarea>
+body {
+              font-family: Arial, Helvetica, sans-serif;
+            }
+            
+            .header {
+              display: flex;
+              justify-content: space-evenly;
+              flex-wrap: wrap;
+            }
+            
+            .header button {
+              background-color: black;
+              color: white;
+              height: 45px;
+              font-size: 20px;
+              font-weight: bolder;
+              padding-right: 15px;
+              padding-left: 15px;
+              margin: 5px;
+            }
+            
+            .dropdown button {
+              height: 45px;
+              display: flex;
+              align-items: center;
+              justify-content: space-between;
+              background-color: #2d2d2d;
+              color: white;
+              width: 400px;
+            }
+            
+            .text {
+              flex: 1;
+              text-align: center;
+            }
+            
+            .arrow {
+              color: #3197f2;
+              font-size: 25px;
+              padding-top: 5px;
+            }
+            
+            .first {
+              display: flex;
+              flex-direction: row;
+              justify-content: center;
+              margin-top: 70px;
+              gap: 50px;
+              flex-wrap: wrap;
+            }
+            
+            .left {
+              background-color: white;
+              display: flex;
+              flex-direction: column;
+              align-items: flex-start;
+              justify-content: center;
+              flex-wrap: wrap;
+              max-width: 800px;
+            }
+            
+            .left-title {
+              font-size: 36px;
+              font-weight: bold;
+              overflow-wrap: break-word;
+            }
+            
+            .left-desc {
+              font-size: 16px;
+              font-weight: bolder;
+              overflow-wrap: break-word;
+            }
+            
+            .highlight-school {
+              margin: 0;
+              line-height: 1;
+              color: white;
+              -webkit-text-stroke: 1.8px #7bcefe;
+            }
+            
+            .right {
+              margin: 5px;
+              display: flex;
+              flex-wrap: wrap;
+              box-sizing: border-box;
+              padding: 0 20px;
+              align-items: center;
+            }
+            
+            .right img {
+              width: 100%;
+              max-width: 500px;
+              min-height: 160px;
+            }
+            .second {
+              background-color: #edf4fb;
+              margin-top: 30px;
+            }
+            
+            .adv p {
+              margin: 0px;
+              overflow-wrap: break-word;
+              max-width: 100%;
+              text-align: center;
+            }
+            
+            .adv {
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              flex-direction: column;
+              width: 1250px;
+              flex-wrap: wrap;
+              width: 100%;
+              box-sizing: border-box;
+              padding: 0 20px;
+            }
+            
+            .adv-content {
+              display: flex;
+              justify-content: end;
+              flex-wrap: wrap;
+            }
+            
+            .emp {
+              width: 540px;
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+              align-items: center;
+              text-align: center;
+            }
+            
+            .reviews {
+              margin-top: 45px;
+              display: flex;
+              flex-direction: row;
+              gap: 40px;
+              justify-content: center;
+              align-items: center;
+              max-width: 100%;
+            }
+            
+            .images {
+              display: flex;
+              flex-wrap: wrap;
+              gap: 60px;
+              justify-content: center;
+              padding: 30px;
+              max-width: 900px;
+              align-items: center;
+            }
+            
+            .companies {
+              display: flex;
+              justify-content: center;
+              align-items: center;
+            }
+            
+            .courses {
+              background-color: #292929;
+              margin: 0px;
+              padding-bottom: 30px;
+            }
+            
+            .courses-title {
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              flex-direction: column;
+            }
+            
+            .courses-title p {
+              overflow-wrap: break-word;
+              margin-left: 10px;
+              margin-right: 10px;
+              text-align: center;
+            }
+            
+            .cards {
+              display: flex;
+              flex-direction: row;
+              justify-content: space-around;
+              margin-top: 50px;
+              flex-wrap: wrap;
+            }
+            
+            .card {
+              color: white;
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+              align-items: center;
+              border: 1px solid #4a4a4a;
+              width: 360px;
+              height: 100%;
+              border-radius: 20px;
+              overflow: hidden;
+              background-color: #212121;
+              margin-bottom: 50px;
+            }
+            
+            .divider {
+              padding-top: 15px;
+              padding-bottom: 15px;
+              background-color: #292929;
+              display: flex;
+              justify-content: center;
+              width: 100%;
+              border-top: 3px solid #4a4a4a;
+            }
+            
+            .divider a {
+              font-size: 13px;
+              font-weight: bolder;
+            }
+            
+            .complex {
+              color: #2e83ce;
+              font-weight: bolder;
+              margin: 0px;
+            }
+            
+            .course-icon {
+              height: 50px;
+            }
+            
+            .course-icon {
+              margin-bottom: 10px;
+              margin-top: 20px;
+            }
+            
+            .bold-course {
+              margin-top: 15px;
+              margin-bottom: 0px;
+            }
+            
+            .orange-course {
+              margin-top: 5px;
+              color: #fc973c;
+              font-weight: bolder;
+            }
+            
+            .course-left {
+              font-size: 14px;
+              color: #2e83ce;
+              font-weight: bolder;
+              margin-bottom: 25px;
+            }
+            
+            .course-describe {
+              margin-top: 10px;
+              margin-bottom: 30px;
+              margin-left: 20px;
+              margin-right: 20px;
+            }
+            
+            footer {
+              display: flex;
+              flex-direction: row;
+              justify-content: space-between;
+              margin-top: 30px;
+            }
+            
+            .left-footer {
+              display: flex;
+              flex-direction: row;
+              width: 1100px;
+              color: white;
+              background-color: black;
+              height: 45px;
+              gap: 60px;
+              align-items: center;
+              flex-wrap: wrap;
+              min-width: 100px;
+              margin-right: 5px;
+            }
+            
+            footer img {
+              height: 45px;
+              margin-right: 5px;
+              margin-left: 5px;
+            }
+            
+            .right-content {
+              display: flex;
+              justify-content: space-evenly;
+              width: 400px;
+            }
+            
+            .right-footer {
+              display: flex;
+              justify-content: space-between;
+              width: 330px;
+              background-color: rgb(255, 255, 255);
+            }
+            
+            .images img {
+              height: 100px;
+              width: auto;
+            }
+            
+            @media (max-width: 768px) {
+              .reviews,
+              .adv-content {
+                flex-direction: column;
+              }
+            
+              .images {
+                max-width: 100px;
+              }
+            
+              .emp img {
+                max-width: 400px;
+              }
+            
+              .left {
+                text-align: center;
+                align-items: center;
+              }
+            }
+            
+            .emp img {
+              width: 100%;
+              max-width: 400px;
+              height: auto;
+              margin-left: 30px;
+            }
+            </textarea>
+          </div>
+          <div id="point3_10" style="display: none; width: 500px">
+            <h1>Висновки:</h1>
+            <p>
+              Дана лабораторна робота дозволила мені придбати практичні навички
+              з верстки сторінок засобами CSS та плаваючих елементів. Я
+              з'ясувала переваги та недоліки різних типів макетів веб-сторінок
+              та опанувала FLEXBOX.
+            </p>
+          </div>
         </div>
       </div>
     </div>

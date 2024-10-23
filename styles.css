@@ -151,3 +151,27 @@ textarea {
 .tasks {
   display: none;
 }
+
+.field-describe div {
+  padding: 20px;
+}
+
+#point3_2 img {
+  width: 90%;
+  height: auto;
+  margin: 10px;
+}
+
+.field-describe div img {
+  padding: 10px;
+}
+
+.field-describe div textarea {
+  margin: 10px;
+}
+
+#point3_7 img {
+  width: 90%;
+  height: auto;
+  margin: 10px;
+}
