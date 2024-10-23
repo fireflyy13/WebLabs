@@ -62,6 +62,19 @@ function showLab3Tasks() {
   labContainer.style.display = "flex";
 }
 
+function showLab4Tasks() {
+  hideAllLabDescriptions();
+  var labContainer = document.querySelector(".tasks");
+  labContainer.innerHTML = `
+    <button class="task" onClick="showPoint4_1()">Тема, Мета, Місце розташування</button>
+   <button class="task" onClick="showPoint4_2()">Десктопна версія</button>
+   <button class="task" onClick="showPoint4_3()">Планшетна версія</button>
+   <button class="task" onClick="showPoint4_4()">Мобільна версія</button>
+   <button class="task" onClick="showPoint4_5()">Висновки</button>
+  `;
+  labContainer.style.display = "flex";
+}
+
 function toggleSelectors() {
   var subTasks = document.getElementById("selectors-subtasks");
   if (subTasks.style.display === "none") {
@@ -236,4 +249,34 @@ function showPoint3_10() {
   var points = document.querySelectorAll(".field-describe > div");
   points.forEach((point) => (point.style.display = "none"));
   document.getElementById("point3_10").style.display = "block";
+}
+
+function showPoint4_1() {
+  var points = document.querySelectorAll(".field-describe > div");
+  points.forEach((point) => (point.style.display = "none"));
+  document.getElementById("point4_1").style.display = "block";
+}
+
+function showPoint4_2() {
+  var points = document.querySelectorAll(".field-describe > div");
+  points.forEach((point) => (point.style.display = "none"));
+  document.getElementById("point4_2").style.display = "block";
+}
+
+function showPoint4_3() {
+  var points = document.querySelectorAll(".field-describe > div");
+  points.forEach((point) => (point.style.display = "none"));
+  document.getElementById("point4_3").style.display = "block";
+}
+
+function showPoint4_4() {
+  var points = document.querySelectorAll(".field-describe > div");
+  points.forEach((point) => (point.style.display = "none"));
+  document.getElementById("point4_4").style.display = "block";
+}
+
+function showPoint4_5() {
+  var points = document.querySelectorAll(".field-describe > div");
+  points.forEach((point) => (point.style.display = "none"));
+  document.getElementById("point4_5").style.display = "block";
 }
