@@ -40,7 +40,9 @@
         <button class="lab" id="lab4" onClick="showLab4Tasks()">
           Лабораторна №4
         </button>
-        <button class="lab">Лабораторна №5</button>
+        <button class="lab" id="lab4" onClick="showLab5Tasks()">
+          Лабораторна №5
+        </button>
         <button class="lab">Лабораторна №6</button>
         <button class="lab">Лабораторна №7</button>
         <button class="lab">Лабораторна №8</button>
@@ -2307,6 +2309,449 @@ https://fireflyy13.github.io/WebLabs/
               також стратегією Mobile First. В результаті веб-застосунок було
               покращено адаптацією для мобільної, планшетної та десктопної
               версій.
+            </p>
+          </div>
+          <div id="point5_1" style="display: none; width: 500px">
+            <p>
+              <b>Тема:</b> ФУНКЦІОНАЛЬНЕ ЗАСТОСУВАННЯ JAVASCRIPT У
+              HTML-ДОКУМЕНТІ. ВИКОРИСТАННЯ МАСИВІВ У JS-СЦЕНАРІЯХ. РЕАЛІЗАЦІЯ
+              ПРОГРАМ ЗАСОВАМИ МОВИ JAVASCRIPT.
+            </p>
+            <p>
+              <b>Мета:</b> придбати практичні навички роботи з конструкціями
+              мови JS, масивами та фугкціями у js-сценаріях. Реалізація програм
+              засовами мови JAVASCRIPT.
+            </p>
+            <pre style="font-family: 'Vollkorn'">
+Посилання на репозиторій Лабораторної №5:
+https://github.com/fireflyy13/Lab5WEB
+          
+Посилання на живу сторінку Лабораторної №5:
+https://fireflyy13.github.io/Lab5WEB/
+          
+Посилання на репозиторій звітного html-документа:
+https://github.com/fireflyy13/WebLabs
+                        
+Посилання на живу сторінку звітного html-документа:
+https://fireflyy13.github.io/WebLabs/
+        </pre
+            >
+          </div>
+          <div id="point5_2" style="display: none; width: 500px">
+            <b>Програмний код</b><br />
+            <textarea>
+              <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      function getShippingMessage(country, price, deliveryFee) {
+        let totalPrice = Number(price) + Number(deliveryFee);
+        return `Shipping to ${country} will cost ${totalPrice} credits.`;
+      }
+
+      let country = prompt("Choose a country of shipping: ");
+      let price = prompt("How much does your product cost? ");
+      let deliveryFee = prompt(
+        "What is your product's delivery fee to the chosen country?"
+      );
+
+      if (isNaN(price) || isNaN(deliveryFee) || !isNaN(country)) {
+        console.log("Please enter valid price and delivery fee!");
+      }
+
+      let result = getShippingMessage(country, price, deliveryFee);
+      console.log(result);
+    </script>
+  </body>
+</html>
+</textarea
+            >
+            <b>Результати виконання</b><br />
+            <img src="Знімок екрана 2024-11-06 201922.png" />
+          </div>
+          <div id="point5_3" style="display: none; width: 500px">
+            <b>Програмний код</b><br />
+            <textarea>
+ <!DOCTYPE html>
+              <html lang="en">
+                <head>
+                  <meta charset="UTF-8" />
+                  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+                  <title>Document</title>
+                </head>
+                <body>
+                  <script>
+                    function makeTransaction(quantity, pricePerDroid, customerCredits) {
+                      let totalOrderSum = quantity * pricePerDroid;
+                      if (totalOrderSum > customerCredits) {
+                        return "Insufficient funds!";
+                      }
+              
+                      return `You ordered ${quantity} droids worth ${totalOrderSum} credits!`;
+                    }
+              
+                    let quantity = prompt("How many droids will the customer order? ");
+                    let pricePerDroid = prompt("What is the cost of one droid? ");
+                    let customerCredits = prompt("How many credits does the customer have?");
+              
+                    if (isNaN(quantity) || isNaN(pricePerDroid) || isNaN(customerCredits)) {
+                      console.log(
+                        "Please enter valid quantity, price per droid and credits!"
+                      );
+                    }
+              
+                    let result = makeTransaction(quantity, pricePerDroid, customerCredits);
+                    console(result);
+                  </script>
+                </body>
+              </html>
+              </textarea
+            >
+            <b>Результати виконання</b><br />
+            <img src="Знімок екрана 2024-11-06 203615.png" />
+          </div>
+          <div id="point5_4" style="display: none; width: 500px">
+            <b>Програмний код</b><br />
+            <textarea>
+<!DOCTYPE html>
+              <html lang="en">
+                <head>
+                  <meta charset="UTF-8" />
+                  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+                  <title>Document</title>
+                </head>
+                <body>
+                  <script>
+                    function makeArray(firstArray, secondArray, maxLength) {
+                      let concatenatedArray = firstArray.concat(secondArray);
+              
+                      // for (let i = 0; i < length(firstArray); i++) {
+                      //   concatenatedArray.push(firstArray[i]);
+                      // }
+              
+                      // for (let i = 0; i < length(secondArray); i++) {
+                      //   concatenatedArray.push(secondArray[i]);
+                      // }
+              
+                      if (concatenatedArray.length > maxLength) {
+                        return concatenatedArray.slice(0, maxLength);
+                      }
+              
+                      return concatenatedArray;
+                    }
+              
+                    let firstArrayStr = prompt(
+                      "Enter the elements of first array separated by spaces: "
+                    );
+                    let secondArrayStr = prompt(
+                      "Enter the elements of second array separated by spaces: "
+                    );
+                    let maxLength = Number(
+                      prompt("What will the max length of a concatenated array be? ")
+                    );
+              
+                    let firstArray = firstArrayStr.split(" ");
+                    let secondArray = secondArrayStr.split(" ");
+              
+                    if (isNaN(maxLength)) {
+                      console.log("Please enter max length!");
+                    }
+              
+                    let result = makeArray(firstArray, secondArray, maxLength);
+                    console.log(result);
+                  </script>
+                </body>
+              </html>
+               </textarea
+            >
+            <b>Результати виконання</b><br />
+            <img src="Знімок екрана 2024-11-06 204035.png" />
+          </div>
+          <div id="point5_5" style="display: none; width: 500px">
+            <b>Програмний код</b><br />
+            <textarea>
+<!DOCTYPE html>
+              <html lang="en">
+                <head>
+                  <meta charset="UTF-8" />
+                  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+                  <title>Document</title>
+                </head>
+                <body>
+                  <script>
+                    function findDuplicates(firstArr, secondArr) {
+                      let duplicates = [];
+                      for (let i = 0; i < firstArr.length; i++) {
+                        for (let j = 0; j < secondArr.length; j++) {
+                          if (
+                            firstArr[i] == secondArr[j] &&
+                            !duplicates.includes(firstArr[i])
+                          ) {
+                            duplicates.push(firstArr[i]);
+                          }
+                        }
+                      }
+                      return duplicates;
+                    }
+              
+                    function findMin(arr) {
+                      let min = Number.MAX_VALUE;
+                      for (let i = 0; i < arr.length; i++) {
+                        if (Number(arr[i]) < min) {
+                          min = Number(arr[i]);
+                        }
+                      }
+                      return min;
+                    }
+              
+                    function bubbleSort(array, n) {
+                      let swapped, temp;
+                      for (let i = 0; i < n - 1; i++) {
+                        swapped = false;
+                        for (let j = 0; j < n - i - 1; j++) {
+                          if (array[j] > array[j + 1]) {
+                            temp = array[j];
+                            array[j] = array[j + 1];
+                            array[j + 1] = temp;
+                            swapped = true;
+                          }
+                        }
+              
+                        if (swapped == false) {
+                          break;
+                        }
+                      }
+                      return array;
+                    }
+              
+                    let choice = prompt("Choose a subtask (1 or 2): ");
+              
+                    if (choice == 1) {
+                      let firstArrayStr = prompt(
+                        "Enter the elements of first array separated by spaces: "
+                      );
+                      let secondArrayStr = prompt(
+                        "Enter the elements of second array separated by spaces: "
+                      );
+                      let firstArray = firstArrayStr.split(" ");
+                      let secondArray = secondArrayStr.split(" ");
+              
+                      let duplicates = findDuplicates(firstArray, secondArray);
+                      let minDuplicate = findMin(duplicates);
+                      alert(minDuplicate);
+                    } else if (choice == 2) {
+                      let initialArrStr = prompt("Enter the elements to be sorted: ");
+                      let initialArr = initialArrStr.split(" ");
+                      let msg = `Initial array: ${initialArr}; `;
+                      alert;
+                      let sorted = bubbleSort(initialArr, initialArr.length);
+                      msg += `\nSorted array: ${sorted}`;
+                      console.log(msg);
+                    }
+                  </script>
+                </body>
+              </html>
+               </textarea
+            >
+            <b>Результати виконання</b><br />
+            <img src="Знімок екрана 2024-11-06 204736.png" /><br />
+            <img src="Знімок екрана 2024-11-06 204830.png" /><br />
+          </div>
+          <div id="point5_6" style="display: none; width: 500px">
+            <b>Програмний код</b><br />
+            <textarea>
+<!DOCTYPE html>
+              <html lang="en">
+                <head>
+                  <meta charset="UTF-8" />
+                  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+                  <title>Document</title>
+                  <link rel="stylesheet" href="styles5.css" />
+                </head>
+                <body>
+                  <div class="wrapper">
+                    <div class="clock">00:00:00</div>
+                    <div class="currentDate">dd/mm/yyyy</div>
+                    <div class="inputs">
+                      <input type="number" id="hourInput" placeholder="00" min="0" max="23" />
+                      <input
+                        type="number"
+                        id="minuteInput"
+                        placeholder="00"
+                        min="0"
+                        max="59"
+                      />
+                    </div>
+                    <div class="date">
+                      <input type="number" id="dayInput" placeholder="dd" min="1" max="31" />
+                      <input
+                        type="number"
+                        id="monthInput"
+                        placeholder="mm"
+                        min="1"
+                        max="12"
+                      />
+                      <input
+                        type="number"
+                        id="yearInput"
+                        placeholder="yyyy"
+                        min="24"
+                        max="99"
+                      />
+                    </div>
+              
+                    <button id="set">Add Alarm</button>
+                    <div class="activeAlarms"></div>
+                  </div>
+                  <script>
+                    let timerRef = document.querySelector(".clock");
+                    let dateRef = document.querySelector(".currentDate");
+                    const hourInput = document.getElementById("hourInput");
+                    const minuteInput = document.getElementById("minuteInput");
+                    const dayInput = document.getElementById("dayInput");
+                    const monthInput = document.getElementById("monthInput");
+                    const yearInput = document.getElementById("yearInput");
+                    const activeAlarms = document.querySelector(".activeAlarms");
+                    const setAlarm = document.getElementById("set");
+                    let alarmsArray = [];
+              
+                    function addZero(value) {
+                      return value < 10 ? "0" + value : value.toString();
+                    }
+              
+                    function formatInput(num) {
+                      let value = parseInt(num.value);
+                      if (!isNaN(value) && value < 10) {
+                        num.value = addZero(value);
+                      }
+                    }
+              
+                    hourInput.addEventListener("change", () => formatInput(hourInput));
+                    minuteInput.addEventListener("change", () => formatInput(minuteInput));
+                    dayInput.addEventListener("change", () => formatInput(dayInput));
+                    monthInput.addEventListener("change", () => formatInput(monthInput));
+              
+                    function displayTimer() {
+                      const date = new Date();
+                      const hours = addZero(date.getHours());
+                      const minutes = addZero(date.getMinutes());
+                      const seconds = addZero(date.getSeconds());
+                      const day = addZero(date.getDate());
+                      const month = addZero(date.getMonth() + 1);
+                      const year = date.getFullYear();
+              
+                      timerRef.innerHTML = `${hours}:${minutes}:${seconds}`;
+                      dateRef.innerHTML = `${day}.${month}.${year}`;
+                      dateRef.style.fontSize = "20px";
+              
+                      alarmsArray.forEach((alarm, index) => {
+                        if (
+                          alarm[5] &&
+                          alarm[0] === hours &&
+                          alarm[1] === minutes &&
+                          alarm[2] === day &&
+                          alarm[3] === month &&
+                          alarm[4] === year
+                        ) {
+                          alert("Wake up!");
+                          alarmsArray[index][5] = false;
+                          updateAlarmsDisplay();
+                        }
+                      });
+                    }
+              
+                    function updateAlarmsDisplay() {
+                      activeAlarms.innerHTML = "";
+                      alarmsArray.forEach((alarm, index) => {
+                        const alarmElement = document.createElement("div");
+                        alarmElement.classList.add("alarm");
+                        console.log(
+                          `Час, на який налаштований будильник: ${alarm[0]}:${alarm[1]}`
+                        );
+                        console.log(`Вибрана дата: ${alarm[2]}.${alarm[3]}.${alarm[4]}`);
+                        console.log("Будильник вимкнено.");
+                        alarmElement.innerHTML = `<span>${alarm[2]}.${alarm[3]}.${alarm[4]} - ${alarm[0]}:${alarm[1]}</span>`;
+              
+                        const checkbox = document.createElement("input");
+                        checkbox.type = "checkbox";
+                        checkbox.checked = alarm[5];
+                        checkbox.addEventListener("click", () => {
+                          if (checkbox.checked) {
+                            startAlarm(index);
+                            console.log("Будильник увімкнено.");
+                          } else {
+                            stopAlarm(index);
+                            console.log("Будильник вимкнено.");
+                          }
+                        });
+                        alarmElement.appendChild(checkbox);
+                        activeAlarms.appendChild(alarmElement);
+                      });
+                    }
+              
+                    setAlarm.addEventListener("click", () => {
+                      const hour = parseInt(hourInput.value);
+                      const minute = parseInt(minuteInput.value);
+                      const day = parseInt(dayInput.value);
+                      const month = parseInt(monthInput.value);
+                      const year = parseInt(yearInput.value);
+              
+                      if (
+                        !isNaN(hour) &&
+                        !isNaN(minute) &&
+                        !isNaN(day) &&
+                        !isNaN(month) &&
+                        !isNaN(year)
+                      ) {
+                        alarmsArray.push([
+                          addZero(hour),
+                          addZero(minute),
+                          addZero(day),
+                          addZero(month),
+                          year,
+                          true,
+                        ]);
+                        updateAlarmsDisplay();
+                      } else {
+                        alert("Будь ласка, введіть коректну дату та час!.");
+                      }
+              
+                      hourInput.value = "";
+                      minuteInput.value = "";
+                      dayInput.value = "";
+                      monthInput.value = "";
+                      yearInput.value = "";
+                    });
+              
+                    function startAlarm(index) {
+                      alarmsArray[index][5] = true;
+                    }
+              
+                    function stopAlarm(index) {
+                      alarmsArray[index][5] = false;
+                    }
+              
+                    setInterval(displayTimer, 1000);
+                  </script>
+                </body>
+              </html>
+               </textarea
+            >
+            <b>Результати виконання</b><br />
+            <img src="Знімок екрана 2024-11-06 210907.png" />
+          </div>
+          <div id="point5_7" style="display: none; width: 500px">
+            <h1>Висновки:</h1>
+            <p>
+              За допомогою даної лабораторної роботи я придбала практичні
+              навички роботи з конструкціями мови JS, масивами та функціями у
+              js-сценаріях, а також реалізувала декілька програм засобами мови
+              JavaScript.
             </p>
           </div>
         </div>
