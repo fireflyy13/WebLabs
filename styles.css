@@ -196,3 +196,21 @@ textarea::-webkit-scrollbar-track {
   height: auto;
   margin: 10px;
 }
+
+textarea::-webkit-scrollbar {
+  width: 10px;
+}
+
+textarea::-webkit-scrollbar-track {
+  background-color: #a98886;
+  border-radius: 10px;
+}
+
+textarea::-webkit-scrollbar-thumb {
+  background-color: rgba(50, 50, 50, 0.7);
+  border-radius: 10px;
+}
+
+textarea::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(50, 50, 50, 0.9);
+}

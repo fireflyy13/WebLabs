@@ -401,3 +401,7 @@ function showPoint6_8() {
   points.forEach((point) => (point.style.display = "none"));
   document.getElementById("point6_8").style.display = "block";
 }
+
+window.onload = function () {
+  showLab1Tasks();
+};
