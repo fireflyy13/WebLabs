@@ -106,6 +106,23 @@ function showLab6Tasks() {
   labContainer.style.display = "flex";
 }
 
+function showLab7Tasks() {
+  hideAllLabDescriptions();
+  var labContainer = document.querySelector(".tasks");
+  labContainer.innerHTML = `
+    <button class="task" onClick="showPoint7_1()">Тема, Мета, Місце розташування</button>
+    <button class="task" onClick="showPoint7_2()">Завдання 2</button>
+    <button class="task" onClick="showPoint7_3()">Завдання 4</button>
+    <button class="task" onClick="showPoint7_4()">Завдання 6</button>
+    <button class="task" onClick="showPoint7_5()">Завдання 7</button>
+    <button class="task" onClick="showPoint7_6()">Завдання 8</button>
+    <button class="task" onClick="showPoint7_7()">Завдання 9</button>
+      <button class="task" onClick="showPoint7_8()">Завдання 10</button>
+    <button class="task" onClick="showPoint7_9()">Висновки</button>
+  `;
+  labContainer.style.display = "flex";
+}
+
 function toggleSelectors() {
   var subTasks = document.getElementById("selectors-subtasks");
   if (subTasks.style.display === "none") {
@@ -400,6 +417,60 @@ function showPoint6_8() {
   var points = document.querySelectorAll(".field-describe > div");
   points.forEach((point) => (point.style.display = "none"));
   document.getElementById("point6_8").style.display = "block";
+}
+
+function showPoint7_1() {
+  var points = document.querySelectorAll(".field-describe > div");
+  points.forEach((point) => (point.style.display = "none"));
+  document.getElementById("point7_1").style.display = "block";
+}
+
+function showPoint7_2() {
+  var points = document.querySelectorAll(".field-describe > div");
+  points.forEach((point) => (point.style.display = "none"));
+  document.getElementById("point7_2").style.display = "block";
+}
+
+function showPoint7_3() {
+  var points = document.querySelectorAll(".field-describe > div");
+  points.forEach((point) => (point.style.display = "none"));
+  document.getElementById("point7_3").style.display = "block";
+}
+
+function showPoint7_4() {
+  var points = document.querySelectorAll(".field-describe > div");
+  points.forEach((point) => (point.style.display = "none"));
+  document.getElementById("point7_4").style.display = "block";
+}
+
+function showPoint7_5() {
+  var points = document.querySelectorAll(".field-describe > div");
+  points.forEach((point) => (point.style.display = "none"));
+  document.getElementById("point7_5").style.display = "block";
+}
+
+function showPoint7_6() {
+  var points = document.querySelectorAll(".field-describe > div");
+  points.forEach((point) => (point.style.display = "none"));
+  document.getElementById("point7_6").style.display = "block";
+}
+
+function showPoint7_7() {
+  var points = document.querySelectorAll(".field-describe > div");
+  points.forEach((point) => (point.style.display = "none"));
+  document.getElementById("point7_7").style.display = "block";
+}
+
+function showPoint7_8() {
+  var points = document.querySelectorAll(".field-describe > div");
+  points.forEach((point) => (point.style.display = "none"));
+  document.getElementById("point7_8").style.display = "block";
+}
+
+function showPoint7_9() {
+  var points = document.querySelectorAll(".field-describe > div");
+  points.forEach((point) => (point.style.display = "none"));
+  document.getElementById("point7_9").style.display = "block";
 }
 
 window.onload = function () {

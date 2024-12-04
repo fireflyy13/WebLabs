@@ -46,7 +46,9 @@
         <button class="lab" id="lab6" onClick="showLab6Tasks()">
           Лабораторна №6
         </button>
-        <button class="lab">Лабораторна №7</button>
+        <button class="lab" id="lab7" onClick="showLab7Tasks()">
+          Лабораторна №7
+        </button>
         <button class="lab">Лабораторна №8</button>
         <button class="lab">Лабораторна №9</button>
       </div>
@@ -3029,7 +3031,7 @@ https://fireflyy13.github.io/WebLabs/
               </textarea
             >
             <b>Результати виконання</b><br />
-            <img src="images/Знімок екрана 2024-11-14 180229.png" />
+            <img src="images/Знімок екрана 2024-11-15 124533.png" />
           </div>
           <div id="point6_8" style="display: none; width: 500px">
             <h1>Висновки:</h1>
@@ -3039,6 +3041,408 @@ https://fireflyy13.github.io/WebLabs/
               стрілочними функціями, а також стрілочними функціями як колбеками.
               Впродовж виконання було реалізовано декілька програм мовою
               JavaScript, дотичних до тем, перерахованих вище.
+            </p>
+          </div>
+          <div id="point7_1" style="display: none; width: 500px">
+            <p>
+              <b>Тема:</b> КЛАСИ. ОБ'ЄКТНА МОДЕЛЬ ДОКУМЕНТА (DOM). ПОДІЇ. ОБ'ЄКТ
+              ПОДІЇ. ДЕЛЕГУВАННЯ ПОДІЙ.
+            </p>
+            <p>
+              <b
+                >Мета: придбати навички роботи з класами, опанувати об'єктну
+                модель документа, набути знання з подій, об'єктів події, а також
+                делегування подій.</b
+              >
+            </p>
+            <pre style="font-family: 'Vollkorn'">
+Посилання на репозиторій Лабораторної №7:
+https://github.com/fireflyy13/Lab7WEB
+          
+Посилання на живу сторінку Лабораторної №7:
+https://fireflyy13.github.io/Lab7WEB/
+          
+Посилання на репозиторій звітного html-документа:
+https://github.com/fireflyy13/WebLabs
+                        
+Посилання на живу сторінку звітного html-документа:
+https://fireflyy13.github.io/WebLabs/
+        </pre
+            >
+          </div>
+          <div id="point7_2" style="display: none; width: 500px">
+            <b>Програмний код</b><br />
+            <textarea>
+ <!DOCTYPE html>
+              <html lang="en">
+                <head>
+                  <meta charset="UTF-8" />
+                  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+                  <title>Document</title>
+                  <link rel="stylesheet" href="styles.css" />
+                </head>
+                <body>
+                  <div>
+                    <h2>ЗАВДАННЯ 2</h2>
+                    <button class="swap-button">Swap me</button>
+                    <input id="first-input" type="text" />
+                    <input id="second-input" type="text" />
+                  </div>
+                </body>
+                <script>
+                  const button = document.querySelector(".swap-button");
+                  const input1 = document.querySelector("#first-input");
+                  const input2 = document.querySelector("#second-input");
+              
+                  button.addEventListener("click", () => {
+                    let temp = input1.value;
+                    input1.value = input2.value;
+                    input2.value = temp;
+                  });
+                </script>
+              </html>
+              </textarea
+            >
+
+            <b>Результати виконання</b><br />
+            <img src="images/Знімок екрана 2024-12-04 023352.png" />
+            <img src="images/Знімок екрана 2024-12-04 023405.png" />
+          </div>
+          <div id="point7_3" style="display: none; width: 500px">
+            <b>Програмний код</b><br />
+            <textarea>
+<!DOCTYPE html>
+              <html lang="en">
+                <head>
+                  <meta charset="UTF-8" />
+                  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+                  <title>Document</title>
+                  <link rel="stylesheet" href="styles.css" />
+                </head>
+                <body>
+                  <h2>ЗАВДАННЯ 4</h2>
+                  <div class="dashedDiv"></div>
+                  <button class="decrease">Зменшити</button>
+                  <button class="increase">Збільшити</button>
+                </body>
+                <script>
+                  const decreaseButton = document.querySelector(".decrease");
+                  const increaseButton = document.querySelector(".increase");
+                  const myDiv = document.querySelector("div");
+              
+                  decreaseButton.addEventListener("click", () => {
+                    myDiv.style.height =
+                      parseInt(window.getComputedStyle(myDiv).height) - 15 + "px";
+                    myDiv.style.width =
+                      parseInt(window.getComputedStyle(myDiv).width) - 15 + "px";
+                  });
+              
+                  increaseButton.addEventListener("click", () => {
+                    myDiv.style.height =
+                      parseInt(window.getComputedStyle(myDiv).height) + 15 + "px";
+                    myDiv.style.width =
+                      parseInt(window.getComputedStyle(myDiv).width) + 15 + "px";
+                  });
+                </script>
+              </html>
+               </textarea
+            >
+
+            <b>Результати виконання</b><br />
+            <img src="images/Знімок екрана 2024-12-04 023538.png" />
+            <img src="images/Знімок екрана 2024-12-04 023609.png" />
+            <img src="images/Знімок екрана 2024-12-04 023617.png" />
+          </div>
+          <div id="point7_4" style="display: none; width: 500px">
+            <b>Програмний код</b><br />
+            <textarea>
+<!DOCTYPE html>
+              <html lang="en">
+                <head>
+                  <meta charset="UTF-8" />
+                  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+                  <title>Document</title>
+                  <link rel="stylesheet" href="styles.css" />
+                </head>
+                <body>
+                  <h2>ЗАВДАННЯ 6</h2>
+                  <ul>
+                    <li>1</li>
+                    <li>4</li>
+                    <li>8</li>
+                    <li>16</li>
+                    <li>20</li>
+                    <li>30</li>
+                  </ul>
+                  <button>Подвоїти</button>
+                </body>
+                <script>
+                  const listPoints = document.querySelectorAll("li");
+                  const myButton = document.querySelector("button");
+              
+                  myButton.addEventListener("click", () => {
+                    listPoints.forEach((element) => {
+                      element.innerHTML = Math.pow(parseInt(element.innerHTML), 2);
+                    });
+                  });
+                </script>
+              </html>
+               </textarea
+            >
+
+            <b>Результати виконання</b><br />
+            <img src="images/Знімок екрана 2024-12-04 023746.png" /> <br />
+            <img src="images/Знімок екрана 2024-12-04 023751.png" />
+          </div>
+          <div id="point7_5" style="display: none; width: 500px">
+            <b>Програмний код</b><br />
+            <textarea>
+<!DOCTYPE html>
+              <html lang="en">
+                <head>
+                  <meta charset="UTF-8" />
+                  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+                  <title>Document</title>
+                  <link rel="stylesheet" href="styles.css" />
+                </head>
+                <body>
+                  <ul id="categories">
+                    <li class="item">
+                      <h2>Animals</h2>
+                      <ul>
+                        <li>Cat</li>
+                        <li>Hamster</li>
+                        <li>Horse</li>
+                        <li>Parrot</li>
+                      </ul>
+                    </li>
+                    <li class="item">
+                      <h2>Products</h2>
+                      <ul>
+                        <li>Bread</li>
+                        <li>Prasley</li>
+                        <li>Cheese</li>
+                      </ul>
+                    </li>
+                    <li class="item">
+                      <h2>Technologies</h2>
+                      <ul>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JavaScript</li>
+                        <li>React</li>
+                        <li>Node.js</li>
+                      </ul>
+                    </li>
+                  </ul>
+                </body>
+                <script>
+                  const categories = document.querySelectorAll("#categories .item");
+                  let categoriesNumber = categories.length;
+              
+                  console.log(
+                    `The number of categories in ul#categories is ${categoriesNumber}.`
+                  );
+              
+                  categories.forEach((element) => {
+                    console.log("\n");
+                    let categoryName = element.querySelector("h2").textContent;
+                    console.log(categoryName + ":");
+              
+                    let innerCategories = element.querySelectorAll("li");
+                    let innerLiAmount = innerCategories.length;
+              
+                    console.log(
+                      `The number of inner categories in this category is ${innerLiAmount}.`
+                    );
+                  });
+                </script>
+              </html>
+               </textarea
+            >
+
+            <b>Результати виконання</b><br />
+            <img src="images/Знімок екрана 2024-12-04 024004.png" />
+          </div>
+          <div id="point7_6" style="display: none; width: 500px">
+            <b>Програмний код</b><br />
+            <textarea>
+<!DOCTYPE html>
+              <html lang="en">
+                <head>
+                  <meta charset="UTF-8" />
+                  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+                  <title>Document</title>
+                  <link rel="stylesheet" href="styles.css" />
+                </head>
+                <body>
+                  <form class="login-form">
+                    <label>
+                      Email
+                      <input type="email" name="email" />
+                    </label>
+                    <label>
+                      Password
+                      <input type="password" name="password" />
+                    </label>
+                    <button type="submit">Log in</button>
+                  </form>
+                </body>
+                <script>
+                  const myForm = document.querySelector(".login-form");
+              
+                  myForm.addEventListener("submit", (event) => {
+                    event.preventDefault();
+              
+                    const inputs = document.querySelectorAll("input");
+                    let isFilled = true;
+                    inputs.forEach((element) => {
+                      if (!element.value) {
+                        isFilled = false;
+                      }
+                    });
+              
+                    if (!isFilled) {
+                      alert("All form fields must be filled in");
+                    }
+              
+                    if (isFilled) {
+                      const { email, password } = myForm.elements;
+                      const formObject = {
+                        email: email.value.trim(),
+                        password: password.value.trim(),
+                      };
+              
+                      console.log("Form Data:", formObject);
+                      myForm.reset();
+                    }
+                  });
+                </script>
+              </html>
+               </textarea
+            >
+
+            <b>Результати виконання</b><br />
+            <img src="images/Знімок екрана 2024-12-04 024410.png" />
+          </div>
+          <div id="point7_7" style="display: none; width: 500px">
+            <b>Програмний код</b><br />
+            <textarea>
+<!DOCTYPE html>
+              <html lang="en">
+                <head>
+                  <meta charset="UTF-8" />
+                  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+                  <title>Document</title>
+                  <link rel="stylesheet" href="styles.css" />
+                </head>
+                <body>
+                  <div class="widget">
+                    <p>Background color: <span class="color">-</span></p>
+                    <button type="button" class="change-color">Change color</button>
+                  </div>
+                </body>
+                <script>
+                  function getRandomHexColor() {
+                    return `#${Math.floor(Math.random() * 16777215)
+                      .toString(16)
+                      .padStart(6, 0)}`;
+                  }
+              
+                  const colorButton = document.querySelector(".change-color");
+                  const pageSpan = document.querySelector(".color");
+              
+                  colorButton.addEventListener("click", () => {
+                    let color = getRandomHexColor();
+                    document.body.style.backgroundColor = color;
+                    pageSpan.textContent = color;
+                  });
+                </script>
+              </html>
+               </textarea
+            >
+
+            <b>Результати виконання</b><br />
+            <img src="images/Знімок екрана 2024-12-04 024453.png" />
+          </div>
+          <div id="point7_8" style="display: none; width: 500px">
+            <b>Програмний код</b><br />
+            <textarea>
+<!DOCTYPE html>
+              <html lang="en">
+                <head>
+                  <meta charset="UTF-8" />
+                  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+                  <title>Document</title>
+                  <link rel="stylesheet" href="styles.css" />
+                </head>
+                <body>
+                  <div id="controls">
+                    <input type="number" min="1" max="100" step="1" />
+                    <button type="button" data-create>Create</button>
+                    <button type="button" data-destroy>Destroy</button>
+                  </div>
+              
+                  <div id="boxes"></div>
+                </body>
+                <script>
+                  const boxesDiv = document.querySelector("#boxes");
+                  const myInput = document.querySelector("#controls input");
+                  const createButton = document.querySelector("[data-create]");
+                  const destroyButton = document.querySelector("[data-destroy]");
+              
+                  createButton.addEventListener("click", () => {
+                    let amount = parseInt(myInput.value);
+                    if (amount >= 1 && amount <= 100) {
+                      destroyBoxes();
+                      createBoxes(amount);
+                    } else {
+                      alert("Amount must be in range from 1 to 100!");
+                    }
+                    myInput.value = "";
+                  });
+              
+                  destroyButton.addEventListener("click", () => {
+                    destroyBoxes();
+                  });
+              
+                  function createBoxes(amount) {
+                    let initialSize = "30px";
+                    for (let i = 0; i < amount; i++) {
+                      const box = document.createElement("div");
+                      box.style.width = initialSize;
+                      box.style.height = initialSize;
+                      box.style.backgroundColor = getRandomHexColor();
+                      box.style.margin = "20px";
+                      boxesDiv.appendChild(box);
+                      initialSize = parseInt(initialSize.slice(0, -2)) + 10;
+                      initialSize += "px";
+                    }
+                  }
+              
+                  function destroyBoxes() {
+                    boxesDiv.innerHTML = "";
+                  }
+              
+                  function getRandomHexColor() {
+                    return `#${Math.floor(Math.random() * 16777215)
+                      .toString(16)
+                      .padStart(6, 0)}`;
+                  }
+                </script>
+              </html> </textarea
+            >
+
+            <b>Результати виконання</b><br />
+            <img src="images/Знімок екрана 2024-12-04 024536.png" />
+            <img src="images/Знімок екрана 2024-12-04 024544.png" />
+          </div>
+          <div id="point7_9" style="display: none; width: 500px">
+            <h1>Висновки:</h1>
+            <p>
+              За допомогою даної лабораторної роботи я придбала практичні
+              навички роботи з класами, опанувала об'єктну модель документа,
+              здобула знання з подій, об'єктів події, а також делегування подій.
             </p>
           </div>
         </div>
