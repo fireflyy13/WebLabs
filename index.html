@@ -49,7 +49,9 @@
         <button class="lab" id="lab7" onClick="showLab7Tasks()">
           Лабораторна №7
         </button>
-        <button class="lab">Лабораторна №8</button>
+        <button class="lab" id="lab8" onClick="showLab8Tasks()">
+          Лабораторна №8
+        </button>
         <button class="lab">Лабораторна №9</button>
       </div>
     </div>
@@ -3443,6 +3445,320 @@ https://fireflyy13.github.io/WebLabs/
               За допомогою даної лабораторної роботи я придбала практичні
               навички роботи з класами, опанувала об'єктну модель документа,
               здобула знання з подій, об'єктів події, а також делегування подій.
+            </p>
+          </div>
+          <div id="point8_1" style="display: none; width: 500px">
+            <p>
+              <b>Тема:</b> WEB-СХОВИЩЕ. WEB STORAGE API. МОДУЛЬНІСТЬ КОДУ.
+              СТВОРЕННЯ МОДАЛЬНОГО ВІКНА. ДЕЛЕГУВАННЯ ПОДІЙ.
+            </p>
+            <p>
+              <b
+                >Мета: придбати практичні навички роботи створення модального
+                вікна; повторити процес створення макету, зокрема створення
+                макету галереї довільних зображень; закріпити навички роботи з
+                делегуванням подій.</b
+              >
+            </p>
+            <pre style="font-family: 'Vollkorn'">
+Посилання на репозиторій Лабораторної №8:
+https://github.com/fireflyy13/Lab8WEB
+          
+Посилання на живу сторінку Лабораторної №8:
+https://fireflyy13.github.io/Lab8WEB/
+          
+Посилання на репозиторій звітного html-документа:
+https://github.com/fireflyy13/WebLabs
+                        
+Посилання на живу сторінку звітного html-документа:
+https://fireflyy13.github.io/WebLabs/
+        </pre
+            >
+          </div>
+          <div id="point8_2" style="display: none; width: 500px">
+            <b>Програмний код</b><br />
+            <i>HTML:</i>
+            <textarea>
+<!DOCTYPE html>
+              <html lang="en">
+                <head>
+                  <meta charset="UTF-8" />
+                  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+                  <title>Document</title>
+                  <link
+                    rel="stylesheet"
+                    href="https://cdn.jsdelivr.net/npm/basiclightbox@5.0.1/dist/basicLightbox.min.css"
+                  />
+                  <link rel="stylesheet" href="CSS/styles.css" />
+                </head>
+                <body>
+                  <ul class="gallery"></ul>
+                  <script src="JS/gallery.js"></script>
+                  <script src="https://cdn.jsdelivr.net/npm/basiclightbox@5.0.1/dist/basicLightbox.min.js"></script>
+                </body>
+              </html>
+               </textarea
+            >
+            <i>JS:</i>
+            <textarea>
+const images = [
+              {
+                preview: "images/49506663218_8d2fa6467a_k 1.png",
+                original: "images/49506663218_8d2fa6467a_k.webp",
+                description: "Сіра лисиця",
+              },
+              {
+                preview: "images/foxfb 1.png",
+                original: "images/foxfb.webp",
+                description: "Руда лисиця взимку, невелика відстань",
+              },
+              {
+                preview: "images/rawImage 1.png",
+                original: "images/rawImage.jpg",
+                description: "Руда лисиця на фоні блакитного неба",
+              },
+              {
+                preview: "images/Red_Fox3-5c26da63f66828ef993ade7e727a545a 1.png",
+                original: "images/Red_Fox3-5c26da63f66828ef993ade7e727a545a.jpg",
+                description: "Руда лисиця на зеленому фоні",
+              },
+              {
+                preview: "images/maxresdefault 1.png",
+                original: "images/maxresdefault.jpg",
+                description: "Довговухі лисиці",
+              },
+              {
+                preview: "images/killingworth-fox-facts 1.png",
+                original: "images/killingworth-fox-facts.jpg",
+                description: "Руда лисиця, що лежить у полі",
+              },
+              {
+                preview: "images/1_jj818i6pGhnuWjwGOi8v8g 1.png",
+                original: "images/1_jj818i6pGhnuWjwGOi8v8g.jpg",
+                description: "Руда лисиця, що лежить на снігу",
+              },
+              {
+                preview: "images/ss03 1.png",
+                original: "images/ss03.jpg",
+                description: "Три лисиці",
+              },
+              {
+                preview: "images/Red-fox-Vulpes-vulpes 1.png",
+                original: "images/Red-fox-Vulpes-vulpes.webp",
+                description: "Лисиця, що біжить по снігу",
+              },
+            ];
+            
+            const foxGallery = document.querySelector(".gallery");
+            
+            images.forEach((image) => {
+              const listElement = document.createElement("li");
+              const imgElement = document.createElement("img");
+            
+              imgElement.src = image.preview;
+              imgElement.alt = image.description;
+              imgElement.setAttribute("data-source", image.original);
+            
+              listElement.appendChild(imgElement);
+              foxGallery.appendChild(listElement);
+            });
+            
+            foxGallery.onClick = function (event) {
+              let target = event.target;
+              if (target.tagName != "img") return;
+              const imageLink = target.getAttribute("data-source");
+              console.log(imageLink);
+            };
+            
+            foxGallery.addEventListener("click", function (event) {
+              let target = event.target;
+              if (target.tagName != "IMG") return;
+              const imageLink = target.getAttribute("data-source");
+              const imageAlt = target.alt;
+              console.log(imageLink);
+            
+              const instance = basicLightbox.create(`
+                <div style="display: flex; flex-direction: column; align-items: center;">
+                  <img src="${imageLink}" alt="${imageAlt}" style="max-width: 90%; max-height: 90vh;" />
+                  <p style="margin-top: 10px; font-size: 18px; color:white">${imageAlt}</p>
+                </div>
+              `);
+            
+              instance.show();
+            });
+             </textarea
+            >
+            <i>CSS:</i>
+            <textarea>
+body {
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              height: 100%;
+              margin: 0;
+              font-family: "Montserrat";
+              font-size: 16px;
+            }
+            
+            html {
+              height: 100%;
+              margin: 0;
+            }
+            
+            .gallery {
+              display: flex;
+              flex-direction: row;
+              list-style: none;
+              gap: 20px;
+              flex-wrap: wrap;
+              width: 100%;
+              max-width: 1440px;
+              justify-content: center;
+              align-items: center;
+              padding: 0px;
+              margin: 0px;
+            }
+             </textarea
+            >
+
+            <b>Результати виконання</b><br />
+            <img src="images/Знімок екрана 2024-12-12 200052.png" />
+            <img src="images/Знімок екрана 2024-12-12 200102.png" />
+          </div>
+          <div id="point8_3" style="display: none; width: 500px">
+            <b>Програмний код</b><br />
+            <i>HTML:</i>
+            <img
+              src="images/screenshot (2).png"
+              style="width: 120%; height: auto; margin: 10px"
+            />
+            <i>JS:</i>
+            <textarea>
+ const feedbackForm = document.querySelector(".feedback-form");
+
+              let formData = {
+                email: "",
+                message: "",
+              };
+              
+              const savedInput = localStorage.getItem("feedback-form-state");
+              if (savedInput) {
+                formData = JSON.parse(savedInput);
+                feedbackForm.elements.email.value = formData.email;
+                feedbackForm.elements.message.value = formData.message;
+              }
+              
+              feedbackForm.addEventListener("input", (event) => {
+                const keyName = event.target.name;
+                const value = event.target.value;
+                if (keyName == "email" || keyName === "message") {
+                  formData[keyName] = value.trim();
+                  localStorage.setItem("feedback-form-state", JSON.stringify(formData));
+                }
+              });
+              
+              function displayData() {
+                const savedState = localStorage.getItem("feedback-form-state");
+                if (savedState) {
+                  const parsedState = JSON.parse(savedState);
+                  document.getElementById(
+                    "savedData"
+                  ).innerText = `Email: ${parsedState.email}\nMessage: ${parsedState.message}`;
+                } else {
+                  document.getElementById("savedData").innerText = "";
+                }
+              }
+              
+              // displayData();
+              
+              feedbackForm.addEventListener("submit", (event) => {
+                event.preventDefault();
+                let isFilled = true;
+                if (
+                  formData["email"] == "" ||
+                  formData["message"] == "" ||
+                  feedbackForm.elements.email.value == "" ||
+                  feedbackForm.elements.message.value == ""
+                ) {
+                  isFilled = false;
+                  alert("Please fill all the fields!");
+                } else {
+                  console.log(formData);
+                  localStorage.removeItem("feedback-form-state");
+                  formData = { email: "", message: "" };
+                  feedbackForm.reset();
+                  // displayData();
+                }
+              });
+              </textarea
+            >
+            <i>CSS:</i>
+            <textarea>
+input {
+              width: 400px;
+              height: 54px;
+              border-radius: 5px;
+              border: 1px solid #d9d9d9;
+              outline: none;
+              padding-left: 10px;
+              font-family: "Montserrat";
+              font-size: 16px;
+            }
+            
+            textarea {
+              width: 400px;
+              height: 104px;
+              border-radius: 5px;
+              border: 1px solid #d9d9d9;
+              outline: none;
+              padding: 10px;
+              font-family: "Montserrat";
+              font-size: 16px;
+            }
+            
+            form,
+            label {
+              display: flex;
+              flex-direction: column;
+              gap: 20px;
+            }
+            
+            .content {
+              display: flex;
+              flex-direction: column;
+              gap: 20px;
+              color: rgba(0, 0, 0, 0.619);
+            }
+            
+            button {
+              border-radius: 20px;
+              width: 126px;
+              height: 46px;
+              background-color: rgba(65, 22, 52, 0.76);
+              color: rgba(255, 255, 255, 0.962);
+              outline: none;
+              border: none;
+              font-family: "Montserrat";
+              font-size: 16px;
+            }
+            
+            button:focus,
+            button:active {
+              outline: none;
+            }
+             </textarea
+            >
+            <b>Результати виконання</b><br />
+            <img src="images/Знімок екрана 2024-12-12 200309.png" />
+            <img src="images/Знімок екрана 2024-12-12 200317.png" />
+          </div>
+          <div id="point8_4" style="display: none; width: 500px">
+            <h1>Висновки:</h1>
+            <p>
+              За допомогою даної лабораторної роботи я придбала практичні
+              навички роботи створення модального вікна, повторила процес
+              створення макету, зокерма галереї довільних зображень, а також
+              закріпила навички з делегуванням подій.
             </p>
           </div>
         </div>

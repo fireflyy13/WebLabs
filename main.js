@@ -123,6 +123,18 @@ function showLab7Tasks() {
   labContainer.style.display = "flex";
 }
 
+function showLab8Tasks() {
+  hideAllLabDescriptions();
+  var labContainer = document.querySelector(".tasks");
+  labContainer.innerHTML = `
+    <button class="task" onClick="showPoint8_1()">Тема, Мета, Місце розташування</button>
+    <button class="task" onClick="showPoint8_2()">Завдання 1</button>
+    <button class="task" onClick="showPoint8_3()">Завдання 2</button>
+    <button class="task" onClick="showPoint8_4()">Висновки</button>
+  `;
+  labContainer.style.display = "flex";
+}
+
 function toggleSelectors() {
   var subTasks = document.getElementById("selectors-subtasks");
   if (subTasks.style.display === "none") {
@@ -471,6 +483,30 @@ function showPoint7_9() {
   var points = document.querySelectorAll(".field-describe > div");
   points.forEach((point) => (point.style.display = "none"));
   document.getElementById("point7_9").style.display = "block";
+}
+
+function showPoint8_1() {
+  var points = document.querySelectorAll(".field-describe > div");
+  points.forEach((point) => (point.style.display = "none"));
+  document.getElementById("point8_1").style.display = "block";
+}
+
+function showPoint8_2() {
+  var points = document.querySelectorAll(".field-describe > div");
+  points.forEach((point) => (point.style.display = "none"));
+  document.getElementById("point8_2").style.display = "block";
+}
+
+function showPoint8_3() {
+  var points = document.querySelectorAll(".field-describe > div");
+  points.forEach((point) => (point.style.display = "none"));
+  document.getElementById("point8_3").style.display = "block";
+}
+
+function showPoint8_4() {
+  var points = document.querySelectorAll(".field-describe > div");
+  points.forEach((point) => (point.style.display = "none"));
+  document.getElementById("point8_4").style.display = "block";
 }
 
 window.onload = function () {

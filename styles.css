@@ -214,3 +214,10 @@ textarea::-webkit-scrollbar-thumb {
 textarea::-webkit-scrollbar-thumb:hover {
   background-color: rgba(50, 50, 50, 0.9);
 }
+
+#point8_2 img,
+#point8_3 img {
+  width: 190%;
+  height: auto;
+  margin: 10px;
+}
